@@ -1,30 +1,21 @@
 const maparts = [
   {
-    image: "images/cinnamoroll.jpeg",
-    title: "Cinnamoroll",
-    artist: "YourName",
-    warp: "/warp cinnamoroll",
-    size: "2×2",
+    image: "images/replantorbanned.png",
+    title: "Replant or Banned",
+    artist: "SarahAzureHeart",
+    warp: "/warp artgallery",
+    size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Anime"
+    category: "Text"
   },
   {
-    image: "images/pikachu.jpeg",
-    title: "Pikachu",
-    artist: "PlayerX",
-    warp: "/warp pikachu",
-    size: "2×2",
-    dateAdded: "2025-12-15",
-    category: "Pokemon"
-  },
-  {
-    image: "images/starrynight.jpeg",
-    title: "Starry Night",
-    artist: "BuilderY",
-    warp: "/warp museum",
-    size: "3×3",
-    dateAdded: "2025-12-01",
-    category: "Related"
+    image: "images/theseedmc.png",
+    title: "TheSeedMC",
+    artist: "SarahAzureHeart",
+    warp: "/warp artgallery",
+    size: "1x1",
+    dateAdded: "2025-12-29",
+    category: "Misc"
   }
 ];
 
