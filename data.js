@@ -4,7 +4,7 @@ const maparts = [
     title: "Replant or Banned",
     artist: "SarahAzureHeart",
     warp: "/warp artgallery",
-    size: "1×1",
+    size: "1x1",
     dateAdded: "2025-12-29",
     category: "Text"
   },
@@ -13,7 +13,7 @@ const maparts = [
     title: "TheSeedMC",
     artist: "SarahAzureHeart",
     warp: "/warp artgallery",
-    size: "1×1",
+    size: "1x1",
     dateAdded: "2025-12-29",
     category: "Misc"
   }
