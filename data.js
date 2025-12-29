@@ -5,7 +5,7 @@ const maparts = [
     artist: "YourName",
     warp: "/warp cinnamoroll",
     size: "2×2",
-    newest: true,
+    dateAdded: "2025-12-29",
     category: "Anime"
   },
   {
@@ -14,7 +14,7 @@ const maparts = [
     artist: "PlayerX",
     warp: "/warp pikachu",
     size: "2×2",
-    newest: false,
+    dateAdded: "2025-12-15",
     category: "Pokemon"
   },
   {
@@ -23,7 +23,7 @@ const maparts = [
     artist: "BuilderY",
     warp: "/warp museum",
     size: "3×3",
-    newest: false,
+    dateAdded: "2025-12-01",
     category: "Related"
   }
 ];
@@ -39,6 +39,20 @@ const sortSelect = document.getElementById("sort");
 const resetBtn = document.getElementById("reset");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+
+// Automatically mark new maparts added in the last 7 days
+function markNewMaparts() {
+  const today = new Date();
+  maparts.forEach(a => {
+    if (a.dateAdded) {
+      const added = new Date(a.dateAdded);
+      const diffDays = (today - added) / (1000 * 60 * 60 * 24);
+      a.newest = diffDays <= 7;
+    } else {
+      a.newest = false;
+    }
+  });
+}
 
 // Populate artist, warp, and category dropdowns dynamically
 function populateFilters() {
@@ -121,4 +135,45 @@ function filterGallery() {
      a.artist.toLowerCase().includes(s) ||
      a.warp.toLowerCase().includes(s)) &&
     (size === "" || a.size === size) &&
-    (artist === "" || a.artist === art
+    (artist === "" || a.artist === artist) &&
+    (warp === "" || a.warp === warp) &&
+    (category === "" || a.category === category)
+  );
+
+  if (sort === "az") filtered.sort((a,b) => a.title.localeCompare(b.title));
+  if (sort === "size") filtered.sort((a,b) => a.size.localeCompare(b.size));
+  if (sort === "newest") filtered = [...filtered].reverse();
+
+  renderGallery(filtered);
+}
+
+// Lightbox
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightbox.classList.add("show");
+}
+lightbox.addEventListener("click", () => lightbox.classList.remove("show"));
+
+// Reset
+resetBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  sizeFilter.value = "";
+  artistFilter.value = "";
+  warpFilter.value = "";
+  categoryFilter.value = "";
+  sortSelect.value = "";
+  renderGallery(maparts);
+});
+
+// Event listeners
+searchInput.addEventListener("input", filterGallery);
+sizeFilter.addEventListener("change", filterGallery);
+artistFilter.addEventListener("change", filterGallery);
+warpFilter.addEventListener("change", filterGallery);
+categoryFilter.addEventListener("change", filterGallery);
+sortSelect.addEventListener("change", filterGallery);
+
+// Initial load
+markNewMaparts();
+populateFilters();
+renderGallery(maparts);
