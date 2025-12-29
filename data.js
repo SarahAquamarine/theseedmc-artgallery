@@ -56,6 +56,15 @@ function filterGallery() {
 
     return matchesSearch && matchesSize;
   });
+function populateArtists() {
+  const artists = [...new Set(maparts.map(a => a.artist))];
+  artists.forEach(artist => {
+    const option = document.createElement("option");
+    option.value = artist;
+    option.textContent = artist;
+    artistFilter.appendChild(option);
+  });
+}
 
   renderGallery(filtered);
 }
