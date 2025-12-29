@@ -1,6 +1,6 @@
 const maparts = [
   {
-    image: "images/cinnamoroll pfp.png",
+    image: "images/cinnamoroll.png",
     title: "Starry Night",
     artist: "Player123",
     warp: "/warp museum",
