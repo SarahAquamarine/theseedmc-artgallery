@@ -81,3 +81,44 @@ function renderGallery(list) {
     card.innerHTML = `
       <img src="${art.image}" alt="${art.title}" loading="lazy">
       <div class="card-content">
+        <h3>${art.title}</h3>
+        <p><strong>Artist:</strong> ${art.artist}</p>
+        <p><strong>Warp:</strong> <code>${art.warp}</code></p>
+        <p><strong>Size:</strong> ${art.size}</p>
+        <p><strong>Category:</strong> ${art.category}</p>
+        <button class="copyWarpBtn">Copy Warp</button>
+      </div>
+    `;
+    const img = card.querySelector("img");
+    img.addEventListener("click", () => openLightbox(art.image));
+    const copyBtn = card.querySelector(".copyWarpBtn");
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(art.warp)
+        .then(() => { copyBtn.textContent = "Copied!"; setTimeout(() => { copyBtn.textContent = "Copy Warp"; }, 1500); })
+        .catch(() => alert("Failed to copy warp"));
+    });
+    if (art.newest) {
+      const badge = document.createElement("div");
+      badge.className = "badge";
+      badge.textContent = "New!";
+      card.appendChild(badge);
+    }
+    gallery.appendChild(card);
+  });
+}
+
+// Filter gallery
+function filterGallery() {
+  const s = searchInput.value.toLowerCase();
+  const size = sizeFilter.value;
+  const artist = artistFilter.value;
+  const warp = warpFilter.value;
+  const category = categoryFilter.value;
+  const sort = sortSelect.value;
+
+  let filtered = maparts.filter(a =>
+    (a.title.toLowerCase().includes(s) ||
+     a.artist.toLowerCase().includes(s) ||
+     a.warp.toLowerCase().includes(s)) &&
+    (size === "" || a.size === size) &&
+    (artist === "" || a.artist === art
