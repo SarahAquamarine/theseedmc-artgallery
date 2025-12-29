@@ -18,6 +18,7 @@ const maparts = [
 const gallery = document.getElementById("gallery");
 const searchInput = document.getElementById("search");
 const sizeFilter = document.getElementById("sizeFilter");
+const artistFilter = document.getElementById("artistFilter");
 
 function renderGallery(list) {
   gallery.innerHTML = "";
