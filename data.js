@@ -4,17 +4,17 @@
 const maparts = [
   {
     image: "images/cinnamoroll.jpeg",
-    title: "Starry Night",
-    artist: "Player123",
-    warp: "/warp museum",
+    title: "Cinnamoroll",
+    artist: "YourName",
+    warp: "/warp cinnamoroll",
     size: "2×2"
   },
   {
     image: "images/cinnamoroll.jpeg",
-    title: "Dragon",
-    artist: "BuilderX",
-    warp: "/warp dragonart",
-    size: "4×4"
+    title: "Cinnamoroll",
+    artist: "YourName",
+    warp: "/warp cinnamoroll",
+    size: "2×2"
   }
 ];
 
