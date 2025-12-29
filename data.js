@@ -6,6 +6,7 @@ const maparts = [
     warp: "/warp cinnamoroll",
     size: "2×2",
     newest: true
+    category: "Anime"
   }
   // Add more maparts here, follow same format
 ];
