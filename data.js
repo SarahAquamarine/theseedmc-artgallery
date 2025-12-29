@@ -1,3 +1,7 @@
+/* =========================
+   MAPART DATA
+   ========================= */
+
 const maparts = [
   {
     image: "images/cinnamoroll.png",
@@ -7,7 +11,7 @@ const maparts = [
     size: "2×2"
   },
   {
-    image: "images/example2.png",
+    image: "images/cinnamoroll.png",
     title: "Dragon",
     artist: "BuilderX",
     warp: "/warp dragonart",
@@ -15,13 +19,32 @@ const maparts = [
   }
 ];
 
+/* =========================
+   DOM ELEMENTS
+   ========================= */
+
 const gallery = document.getElementById("gallery");
 const searchInput = document.getElementById("search");
 const sizeFilter = document.getElementById("sizeFilter");
 const artistFilter = document.getElementById("artistFilter");
+const warpFilter = document.getElementById("warpFilter");
+const sortSelect = document.getElementById("sort");
+const resetBtn = document.getElementById("reset");
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+/* =========================
+   RENDER GALLERY
+   ========================= */
 
 function renderGallery(list) {
   gallery.innerHTML = "";
+
+  if (list.length === 0) {
+    gallery.innerHTML = "<p>No mapart found.</p>";
+    return;
+  }
 
   list.forEach(art => {
     const card = document.createElement("div");
@@ -37,9 +60,16 @@ function renderGallery(list) {
       </div>
     `;
 
+    const img = card.querySelector("img");
+    img.addEventListener("click", () => openLightbox(art.image));
+
     gallery.appendChild(card);
   });
 }
+
+/* =========================
+   FILTER + SORT LOGIC
+   ========================= */
 
 function filterGallery() {
   const searchText = searchInput.value.toLowerCase();
@@ -82,6 +112,10 @@ function filterGallery() {
   renderGallery(filtered);
 }
 
+/* =========================
+   POPULATE DROPDOWNS
+   ========================= */
+
 function populateArtists() {
   const artists = [...new Set(maparts.map(a => a.artist))];
   artists.forEach(artist => {
@@ -92,11 +126,56 @@ function populateArtists() {
   });
 }
 
-  renderGallery(filtered);
+function populateWarps() {
+  const warps = [...new Set(maparts.map(a => a.warp))];
+  warps.forEach(warp => {
+    const option = document.createElement("option");
+    option.value = warp;
+    option.textContent = warp;
+    warpFilter.appendChild(option);
+  });
 }
-// Event listeners
+
+/* =========================
+   LIGHTBOX
+   ========================= */
+
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightbox.style.display = "flex";
+}
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+/* =========================
+   RESET BUTTON
+   ========================= */
+
+resetBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  sizeFilter.value = "";
+  artistFilter.value = "";
+  warpFilter.value = "";
+  sortSelect.value = "";
+  renderGallery(maparts);
+});
+
+/* =========================
+   EVENT LISTENERS
+   ========================= */
+
 searchInput.addEventListener("input", filterGallery);
 sizeFilter.addEventListener("change", filterGallery);
+artistFilter.addEventListener("change", filterGallery);
+warpFilter.addEventListener("change", filterGallery);
+sortSelect.addEventListener("change", filterGallery);
 
-// Initial load — SHOW EVERYTHING
+/* =========================
+   INITIAL LOAD
+   ========================= */
+
+populateArtists();
+populateWarps();
 renderGallery(maparts);
