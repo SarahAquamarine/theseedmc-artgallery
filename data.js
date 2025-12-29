@@ -10,11 +10,18 @@ const maparts = [
     size: "2×2"
   },
   {
-    image: "images/cinnamoroll.jpeg",
-    title: "Cinnamoroll",
-    artist: "YourName",
-    warp: "/warp cinnamoroll",
+    image: "images/example1.png",
+    title: "Starry Night",
+    artist: "Player123",
+    warp: "/warp museum",
     size: "2×2"
+  },
+  {
+    image: "images/example2.png",
+    title: "Dragon",
+    artist: "BuilderX",
+    warp: "/warp dragonart",
+    size: "4×4"
   }
 ];
 
@@ -58,11 +65,11 @@ function renderGallery(list) {
       </div>
     `;
 
-    // Lightbox click
+    // Lightbox
     const img = card.querySelector("img");
     img.addEventListener("click", () => openLightbox(art.image));
 
-    // Copy Warp button
+    // Copy Warp
     const copyBtn = card.querySelector(".copyWarpBtn");
     copyBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(art.warp)
@@ -99,4 +106,78 @@ function filterGallery() {
       art.warp.toLowerCase().includes(searchText);
 
     const matchesSize = sizeValue === "" || art.size === sizeValue;
-    const matchesArtist = artistValue
+    const matchesArtist = artistValue === "" || art.artist === artistValue;
+    const matchesWarp = warpValue === "" || art.warp === warpValue;
+
+    return matchesSearch && matchesSize && matchesArtist && matchesWarp;
+  });
+
+  // Sorting
+  if (sortValue === "az") filtered.sort((a, b) => a.title.localeCompare(b.title));
+  if (sortValue === "size") filtered.sort((a, b) => a.size.localeCompare(b.size));
+  if (sortValue === "newest") filtered = [...filtered].reverse();
+
+  renderGallery(filtered);
+}
+
+/* =========================
+   POPULATE DROPDOWNS
+   ========================= */
+function populateArtists() {
+  const artists = [...new Set(maparts.map(a => a.artist))];
+  artists.forEach(artist => {
+    const option = document.createElement("option");
+    option.value = artist;
+    option.textContent = artist;
+    artistFilter.appendChild(option);
+  });
+}
+
+function populateWarps() {
+  const warps = [...new Set(maparts.map(a => a.warp))];
+  warps.forEach(warp => {
+    const option = document.createElement("option");
+    option.value = warp;
+    option.textContent = warp;
+    warpFilter.appendChild(option);
+  });
+}
+
+/* =========================
+   LIGHTBOX
+   ========================= */
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightbox.style.display = "flex";
+}
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+/* =========================
+   RESET BUTTON
+   ========================= */
+resetBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  sizeFilter.value = "";
+  artistFilter.value = "";
+  warpFilter.value = "";
+  sortSelect.value = "";
+  renderGallery(maparts);
+});
+
+/* =========================
+   EVENT LISTENERS
+   ========================= */
+searchInput.addEventListener("input", filterGallery);
+sizeFilter.addEventListener("change", filterGallery);
+artistFilter.addEventListener("change", filterGallery);
+warpFilter.addEventListener("change", filterGallery);
+sortSelect.addEventListener("change", filterGallery);
+
+/* =========================
+   INITIAL LOAD
+   ========================= */
+populateArtists();
+populateWarps();
+renderGallery(maparts);
