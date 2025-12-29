@@ -1,25 +1,64 @@
-<header>
-  <h1>TheSeedMC Mapart Gallery</h1>
-  <p>Browse mapart and find them in-game</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TheSeedMC Mapart Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <input
-    type="text"
-    id="search"
-    placeholder="Search title, artist, or warp..."
-  >
+<body>
 
-  <select id="sizeFilter">
-    <option value="">All sizes</option>
-    <option value="1×1">1×1</option>
-    <option value="2×2">2×2</option>
-    <option value="3×3">3×3</option>
-    <option value="4×4">4×4</option>
-  </select>
+  <header>
+    <h1>🎨 Mapart Gallery</h1>
+    <p>Browse mapart and find them in-game</p>
 
-  <!-- ADD THIS LINE -->
-  <button id="reset">Show all</button>
-</header>
+    <!-- SEARCH -->
+    <input
+      type="text"
+      id="search"
+      placeholder="Search title, artist, or warp..."
+    >
 
-<select id="artistFilter">
-  <option value="">All artists</option>
-</select>
+    <!-- FILTERS -->
+    <select id="sizeFilter">
+      <option value="">All sizes</option>
+      <option value="1×1">1×1</option>
+      <option value="2×2">2×2</option>
+      <option value="3×3">3×3</option>
+      <option value="4×4">4×4</option>
+    </select>
+
+    <select id="artistFilter">
+      <option value="">All artists</option>
+    </select>
+
+    <select id="warpFilter">
+      <option value="">All warps</option>
+    </select>
+
+    <!-- SORT -->
+    <select id="sort">
+      <option value="">Sort by</option>
+      <option value="az">Title A–Z</option>
+      <option value="size">Size</option>
+      <option value="newest">Newest</option>
+    </select>
+
+    <!-- RESET -->
+    <button id="reset">Show all</button>
+  </header>
+
+  <!-- GALLERY -->
+  <main id="gallery"></main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <img id="lightbox-img" alt="Enlarged mapart">
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="data.js"></script>
+
+</body>
+</html>
