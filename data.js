@@ -3,14 +3,14 @@
    ========================= */
 const maparts = [
   {
-    image: "images/cinnamoroll.png",
+    image: "images/cinnamoroll.jpeg",
     title: "Starry Night",
     artist: "Player123",
     warp: "/warp museum",
     size: "2×2"
   },
   {
-    image: "images/cinnamoroll.png",
+    image: "images/cinnamoroll.jpeg",
     title: "Dragon",
     artist: "BuilderX",
     warp: "/warp dragonart",
