@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Server Mapart Gallery</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<header>
+  <h1>🎨 Mapart Gallery</h1>
+  <p>Browse mapart and find them in-game</p>
 
-  <header>
-    <h1>🎨 Mapart Gallery</h1>
-    <p>Browse mapart and find them in-game</p>
-  </header>
+  <input
+    type="text"
+    id="search"
+    placeholder="Search title, artist, or warp..."
+  >
 
-  <main id="gallery"></main>
+  <select id="sizeFilter">
+    <option value="">All sizes</option>
+    <option value="1×1">1×1</option>
+    <option value="2×2">2×2</option>
+    <option value="3×3">3×3</option>
+    <option value="4×4">4×4</option>
+  </select>
+</header>
 
-  <script src="data.js"></script>
-</body>
-</html>
+<main id="gallery"></main>
