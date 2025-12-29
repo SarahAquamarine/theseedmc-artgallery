@@ -6,7 +6,7 @@ const maparts = [
     warp: "/warp artgallery",
     size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Text"
+    category: "Misc"
   },
   {
     image: "images/theseedmc.png",
