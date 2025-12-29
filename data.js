@@ -58,10 +58,9 @@ function filterGallery() {
 
   renderGallery(filtered);
 }
-
 // Event listeners
 searchInput.addEventListener("input", filterGallery);
 sizeFilter.addEventListener("change", filterGallery);
 
-// Initial load
+// Initial load — SHOW EVERYTHING
 renderGallery(maparts);
