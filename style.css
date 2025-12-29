@@ -59,7 +59,11 @@ header button:hover {
   transition: transform 0.2s;
 }
 
-.card:hover { transform: scale(1.03); }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
 .card img {
   width: 100%;
