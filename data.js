@@ -44,8 +44,11 @@ function renderGallery(list) {
 function filterGallery() {
   const searchText = searchInput.value.toLowerCase();
   const sizeValue = sizeFilter.value;
+  const artistValue = artistFilter.value;
+  const warpValue = warpFilter.value;
+  const sortValue = sortSelect.value;
 
-  const filtered = maparts.filter(art => {
+  let filtered = maparts.filter(art => {
     const matchesSearch =
       art.title.toLowerCase().includes(searchText) ||
       art.artist.toLowerCase().includes(searchText) ||
@@ -54,8 +57,31 @@ function filterGallery() {
     const matchesSize =
       sizeValue === "" || art.size === sizeValue;
 
-    return matchesSearch && matchesSize;
+    const matchesArtist =
+      artistValue === "" || art.artist === artistValue;
+
+    const matchesWarp =
+      warpValue === "" || art.warp === warpValue;
+
+    return matchesSearch && matchesSize && matchesArtist && matchesWarp;
   });
+
+  // Sorting
+  if (sortValue === "az") {
+    filtered.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  if (sortValue === "size") {
+    filtered.sort((a, b) => a.size.localeCompare(b.size));
+  }
+
+  if (sortValue === "newest") {
+    filtered = [...filtered].reverse();
+  }
+
+  renderGallery(filtered);
+}
+
 function populateArtists() {
   const artists = [...new Set(maparts.map(a => a.artist))];
   artists.forEach(artist => {
