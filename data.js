@@ -16,7 +16,23 @@ const maparts = [
     size: "1x1",
     dateAdded: "2025-12-29",
     category: "Misc"
-  }
+  },
+  {
+    image: "Eden's Cat.png",
+    title: "Eden's Cat",
+    artist: "Bipolarbearx56",
+    warp: "/warp mapart by eden",
+    size: "1x1",
+    dateAdded: "2025-12-29",
+  },
+  {
+    image: "Chibi FFVII.png",
+    title: "Chibi FFVII",
+    artist: "Bipolarbearx56",
+    warp: "/warp mapart by eden",
+    size: "1x1",
+    dateAdded: "2025-12-29",
+  },
 ];
 
 // DOM elements
