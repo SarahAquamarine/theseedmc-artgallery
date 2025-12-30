@@ -159,7 +159,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Pokemon"
+    category: "Other Characters"
   },
   {
     image: "images/Nezuko.png",
