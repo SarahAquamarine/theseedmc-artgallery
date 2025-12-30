@@ -18,7 +18,7 @@ const maparts = [
     category: "Misc"
   },
   {
-    image: "His Perspective.png",
+    image: "images/His Perspective.png",
     title: "His Perspective",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -26,7 +26,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Her Perspective.png",
+    image: "images/Her Perspective.png",
     title: "Her Perspective",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -34,7 +34,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Save Game.png",
+    image: "images/Save Game.png",
     title: "Save Game?",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -42,7 +42,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Eden's Cat.png",
+    image: "images/Eden's Cat.png",
     title: "Eden's Cat",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -50,7 +50,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Chibi FFVII.png",
+    image: "images/Chibi FFVII.png",
     title: "Chibi FFVII",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -58,7 +58,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Could n Tifa.png",
+    image: "images/Could n Tifa.png",
     title: "Could & Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -66,7 +66,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Ashe.png",
+    image: "images/Ashe.png",
     title: "Ashe",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -74,7 +74,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Zelda.png",
+    image: "images/Zelda.png",
     title: "Zelda",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -82,7 +82,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Buggy.png",
+    image: "images/Buggy.png",
     title: "Buggy",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -90,7 +90,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Mew.png",
+    image: "images/Mew.png",
     title: "Mew",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -98,7 +98,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Tanjiro.png",
+    image: "images/Tanjiro.png",
     title: "Tanjiro",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -106,7 +106,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Nami.png",
+    image: "images/Nami.png",
     title: "Nami",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -114,7 +114,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Costa Del Tifa.png",
+    image: "images/Costa Del Tifa.png",
     title: "Costa Del Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -122,7 +122,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Tidus n Yuna.png",
+    image: "images/Tidus n Yuna.png",
     title: "Tidus & Yuna.png",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -130,7 +130,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Lightning.png",
+    image: "images/Lightning.png",
     title: "Lightning.png",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -138,7 +138,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "ZeroTwo.png",
+    image: "images/ZeroTwo.png",
     title: "ZeroTwo",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -146,7 +146,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Nezuko.png",
+    image: "images/Nezuko.png",
     title: "Nezuko",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -154,7 +154,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "Aerith.png",
+    image: "images/Aerith.png",
     title: "Aerith",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
@@ -162,7 +162,7 @@ const maparts = [
     dateAdded: "2025-12-29",
   },
   {
-    image: "The Straw Hat Pirates.png",
+    image: "images/The Straw Hat Pirates.png",
     title: "The Straw Hat Pirates.png",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
