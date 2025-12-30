@@ -24,6 +24,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Her Perspective.png",
@@ -32,6 +33,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Save Game.png",
@@ -40,6 +42,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Eden's Cat.png",
@@ -48,6 +51,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x2",
     dateAdded: "2025-12-29",
+    category: "Animals"
   },
   {
     image: "images/Chibi FFVII.png",
@@ -56,6 +60,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x2",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Could n Tifa.png",
@@ -64,6 +69,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Ashe.png",
@@ -72,6 +78,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Zelda.png",
@@ -80,6 +87,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Legend of Zelda"
   },
   {
     image: "images/Buggy.png",
@@ -88,6 +96,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Mew.png",
@@ -96,6 +105,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Pokemon"
   },
   {
     image: "images/Tanjiro.png",
@@ -104,6 +114,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    category: "Demon Slayer"
   },
   {
     image: "images/Nami.png",
@@ -112,6 +123,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Costa Del Tifa.png",
@@ -120,6 +132,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Tidus n Yuna.png",
@@ -128,6 +141,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/Lightning.png",
@@ -136,6 +150,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/ZeroTwo.png",
@@ -144,6 +159,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Pokemon"
   },
   {
     image: "images/Nezuko.png",
@@ -152,6 +168,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Demon Slayer"
   },
   {
     image: "images/Aerith.png",
@@ -160,6 +177,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
+    category: "Other Characters"
   },
   {
     image: "images/The Straw Hat Pirates.png",
@@ -168,6 +186,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "3x4",
     dateAdded: "2025-12-29",
+    category: "One Piece"
   }
 ];
 
