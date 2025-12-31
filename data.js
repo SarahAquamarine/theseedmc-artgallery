@@ -42,6 +42,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
+    transparent: true,
     category: "Other Characters"
   },
   {
@@ -60,6 +61,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "1x2",
     dateAdded: "2025-12-29",
+    transparent: true,
     category: "Other Characters"
   },
   {
@@ -87,6 +89,7 @@ const maparts = [
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
+    transparent: true,
     category: "Legend of Zelda"
   },
   {
