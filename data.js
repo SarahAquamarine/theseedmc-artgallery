@@ -200,7 +200,7 @@ const maparts = [
     transparent: false
   },
   {
-    image: "images/straw-hat-pirates.png",
+    image: "images/the-straw-hat-pirates.png",
     title: "The Straw Hat Pirates",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
