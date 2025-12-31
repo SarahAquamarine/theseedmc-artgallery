@@ -71,7 +71,7 @@ const maparts = [
   },
   {
     image: "images/could-and-tifa.png",
-    title: "Cloud & Tifa",
+    title: "Could & Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
