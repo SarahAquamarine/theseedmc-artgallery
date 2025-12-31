@@ -1,12 +1,13 @@
 const maparts = [
   {
-    image: "images/replantorbanned.png",
+    image: "images/replant-or-banned.png",
     title: "Replant or Banned",
     artist: "SarahAzureHeart",
     warp: "/warp artgallery",
     size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Misc"
+    category: "Misc",
+    transparent: false
   },
   {
     image: "images/theseedmc.png",
@@ -15,183 +16,201 @@ const maparts = [
     warp: "/warp artgallery",
     size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Misc"
+    category: "Misc",
+    transparent: false
   },
   {
-    image: "images/His Perspective.png",
+    image: "images/his-perspective.png",
     title: "His Perspective",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Her Perspective.png",
+    image: "images/her-perspective.png",
     title: "Her Perspective",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Save Game.png",
+    image: "images/save-game.png",
     title: "Save Game?",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "1x1",
     dateAdded: "2025-12-29",
-    transparent: true,
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: true
   },
   {
-    image: "images/Eden's Cat.png",
+    image: "images/edens-cat.png",
     title: "Eden's Cat",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "1x2",
     dateAdded: "2025-12-29",
-    category: "Animals"
+    category: "Animals",
+    transparent: false
   },
   {
-    image: "images/Chibi FFVII.png",
+    image: "images/chibi-ffvii.png",
     title: "Chibi FFVII",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "1x2",
     dateAdded: "2025-12-29",
-    transparent: true,
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: true
   },
   {
-    image: "images/Could n Tifa.png",
-    title: "Could & Tifa",
+    image: "images/cloud-and-tifa.png",
+    title: "Cloud & Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Ashe.png",
+    image: "images/ashe.png",
     title: "Ashe",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Zelda.png",
+    image: "images/zelda.png",
     title: "Zelda",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    transparent: true,
-    category: "Legend of Zelda"
+    category: "Legend of Zelda",
+    transparent: true
   },
   {
-    image: "images/Buggy.png",
+    image: "images/buggy.png",
     title: "Buggy",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Mew.png",
+    image: "images/mew.png",
     title: "Mew",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    category: "Pokemon"
+    category: "Pokemon",
+    transparent: false
   },
   {
-    image: "images/Tanjiro.png",
+    image: "images/tanjiro.png",
     title: "Tanjiro",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x2",
     dateAdded: "2025-12-29",
-    category: "Demon Slayer"
+    category: "Demon Slayer",
+    transparent: false
   },
   {
-    image: "images/Nami.png",
+    image: "images/nami.png",
     title: "Nami",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Costa Del Tifa.png",
+    image: "images/costa-del-tifa.png",
     title: "Costa Del Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Tidus n Yuna.png",
-    title: "Tidus & Yuna.png",
+    image: "images/tidus-and-yuna.png",
+    title: "Tidus & Yuna",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Lightning.png",
-    title: "Lightning.png",
+    image: "images/lightning.png",
+    title: "Lightning",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/ZeroTwo.png",
+    image: "images/zerotwo.png",
     title: "ZeroTwo",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/Nezuko.png",
+    image: "images/nezuko.png",
     title: "Nezuko",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Demon Slayer"
+    category: "Demon Slayer",
+    transparent: false
   },
   {
-    image: "images/Aerith.png",
+    image: "images/aerith.png",
     title: "Aerith",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "2x3",
     dateAdded: "2025-12-29",
-    category: "Other Characters"
+    category: "Other Characters",
+    transparent: false
   },
   {
-    image: "images/The Straw Hat Pirates.png",
-    title: "The Straw Hat Pirates.png",
+    image: "images/straw-hat-pirates.png",
+    title: "The Straw Hat Pirates",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
     size: "3x4",
     dateAdded: "2025-12-29",
-    category: "One Piece"
+    category: "One Piece",
+    transparent: false
   }
 ];
+
 
 // DOM elements
 const gallery = document.getElementById("gallery");
@@ -201,6 +220,7 @@ const artistFilter = document.getElementById("artistFilter");
 const warpFilter = document.getElementById("warpFilter");
 const categoryFilter = document.getElementById("categoryFilter");
 const sortSelect = document.getElementById("sort");
+const bgFilter = document.getElementById("bgFilter");
 const resetBtn = document.getElementById("reset");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -298,6 +318,7 @@ function filterGallery() {
   const warp = warpFilter.value;
   const category = categoryFilter.value;
   const sort = sortSelect.value;
+  const bgValue = bgFilter.value;
 
   let filtered = maparts.filter(a =>
     (a.title.toLowerCase().includes(s) ||
@@ -306,11 +327,16 @@ function filterGallery() {
     (size === "" || a.size === size) &&
     (artist === "" || a.artist === artist) &&
     (warp === "" || a.warp === warp) &&
-    (category === "" || a.category === category)
+    (category === "" || a.category === category) &&
+    (
+      bgValue === "" ||
+      (bgValue === "transparent" && a.transparent === true) ||
+      (bgValue === "solid" && a.transparent === false)
+    )
   );
 
-  if (sort === "az") filtered.sort((a,b) => a.title.localeCompare(b.title));
-  if (sort === "size") filtered.sort((a,b) => a.size.localeCompare(b.size));
+  if (sort === "az") filtered.sort((a, b) => a.title.localeCompare(b.title));
+  if (sort === "size") filtered.sort((a, b) => a.size.localeCompare(b.size));
   if (sort === "newest") filtered = [...filtered].reverse();
 
   renderGallery(filtered);
@@ -331,6 +357,7 @@ resetBtn.addEventListener("click", () => {
   warpFilter.value = "";
   categoryFilter.value = "";
   sortSelect.value = "";
+  bgFilter.value = "";
   renderGallery(maparts);
 });
 
@@ -341,6 +368,7 @@ artistFilter.addEventListener("change", filterGallery);
 warpFilter.addEventListener("change", filterGallery);
 categoryFilter.addEventListener("change", filterGallery);
 sortSelect.addEventListener("change", filterGallery);
+bgFilter.addEventListener("change", filterGallery);
 
 // Initial load
 markNewMaparts();
