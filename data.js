@@ -70,7 +70,7 @@ const maparts = [
     transparent: true
   },
   {
-    image: "images/cloud-and-tifa.png",
+    image: "images/could-and-tifa.png",
     title: "Cloud & Tifa",
     artist: "Bipolarbearx56",
     warp: "/warp mapart by eden",
