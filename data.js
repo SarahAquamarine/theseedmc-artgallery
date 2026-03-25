@@ -322,7 +322,9 @@ function markNewMaparts() {
 function populateFilters() {
   const artists = [...new Set(maparts.map(a => a.artist))];
   const warps = [...new Set(maparts.map(a => a.warp))];
-  const categories = [...new Set(maparts.flatMap(a => a.categories))];
+  const categories = [...new Set(
+  maparts.flatMap(a => a.categories)
+)].sort((a, b) => a.localeCompare(b));
 
   artists.forEach(a => {
     artistFilter.innerHTML += `<option value="${a}">${a}</option>`;
