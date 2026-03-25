@@ -137,7 +137,37 @@ const maparts = [
   categories:  ["Horror", "SCP", "Characters"],
   transparent: true
 },
-
+{
+  image:       "images/clown.png",
+  title:       "Clown",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Horror", "Characters"],
+  transparent: false
+},
+{
+  image:       "images/dead-cowboy.png",
+  title:       "Dead Cowboy",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Horror", "Characters"],
+  transparent: false
+},
+{
+  image:       "images/trench.png",
+  title:       "Trench",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Horror", "Aesthetic"],
+  transparent: false
+},
+  
 // ==========================
 // ===== Decor ==============
 // ==========================
@@ -152,6 +182,98 @@ const maparts = [
   transparent: true
 },
 
+// ==========================
+// ===== Mario / Gaming =====
+// ==========================
+{
+  image:       "images/brick-block.png",
+  title:       "Brick Block",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Gaming", "Mario", "Objects"],
+  transparent: false
+},
+{
+  image:       "images/question-block.png",
+  title:       "Question Block",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Gaming", "Mario", "Objects"],
+  transparent: false
+},
+{
+  image:       "images/question-block-2.png",
+  title:       "Question Block 2",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Gaming", "Mario", "Objects"],
+  transparent: false
+},
+{
+  image:       "images/pipe.png",
+  title:       "Pipe",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Gaming", "Mario", "Objects"],
+  transparent: false
+},
+{
+  image:       "images/pipe-2.png",
+  title:       "Pipe 2",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Gaming", "Mario", "Objects"],
+  transparent: false
+},
+
+// ==========================
+// ===== Objects / Utility ==
+// ==========================
+{
+  image:       "images/empty-block.png",
+  title:       "Empty Block",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Objects", "Utility"],
+  transparent: false
+},
+{
+  image:       "images/empty-block-2.png",
+  title:       "Empty Block 2",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Objects", "Utility"],
+  transparent: false
+},
+
+// ==========================
+// ===== Aesthetic =========
+// ==========================
+{
+  image:       "images/disco-ball.png",
+  title:       "Disco Ball",
+  artist:      "BringTheHorizon",
+  warp:        "/warp gothic mapart",
+  size:        "1x1",
+  dateAdded:   "2026-03-24",
+  categories:  ["Aesthetic", "Objects"],
+  transparent: false
+},
+  
   // ==========================
   // ===== Other Characters ===
   // ==========================
