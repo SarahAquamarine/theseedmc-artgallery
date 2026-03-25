@@ -584,6 +584,109 @@ const maparts = [
   transparent: true
 },
   // ==========================
+// ===== Gothic Pack (4) ====
+// ==========================
+{
+  image: "images/mario-mushroom.png",
+  title: "Mario Mushroom",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming", "Mario", "Objects"],
+  transparent: true
+},
+{
+  image: "images/merry-christmas.png",
+  title: "Merry Christmas",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Text"],
+  transparent: true
+},
+{
+  image: "images/moon.png",
+  title: "Moon",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/moss.png",
+  title: "Moss",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature"],
+  transparent: true
+},
+{
+  image: "images/mouse.png",
+  title: "Mouse",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Animals"],
+  transparent: true
+},
+{
+  image: "images/mouse-hole.png",
+  title: "Mouse Hole",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Objects", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/new.png",
+  title: "New",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/pink-ornament.png",
+  title: "Pink Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/primogem.png",
+  title: "Primogem",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming"],
+  transparent: true
+},
+{
+  image: "images/purple-ornament.png",
+  title: "Purple Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+}
+  // ==========================
   // ===== Other Characters ===
   // ==========================
   {
