@@ -1271,7 +1271,36 @@ const maparts = [
   categories: ["Text", "Utility"],
   transparent: true
 },
-
+{
+  image: "images/blue-ornament.png",
+  title: "Blue Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/bongcheon-dong-ghost.png",
+  title: "Bongcheon Dong Ghost",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror"],
+  transparent: true
+},
+{
+  image: "images/christmas-lights.png",
+  title: "Christmas Lights",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Decor"],
+  transparent: true
+},
 ];
 
 // ==========================
@@ -1441,49 +1470,3 @@ resetBtn.addEventListener("click", () => {
 
   renderGallery(maparts);
 });
-
-lightbox.addEventListener("click", () => {
-  lightbox.classList.remove("show");
-});
-
-// ==========================
-// Init
-// ==========================
-markNewMaparts();
-populateFilters();
-renderGallery(maparts);
-
-const fileNames = [
-"aerith","angel","ashe","back-in-stock","beheaded-statue","better-call-saul",
-"black-all-are-welcome-here","black-commissions-closed","black-commissions-open",
-"black-drink-some-water","black-mapart-coming-soon-heart","black-mapart-coming-soon",
-"black-not-taking-orders","black-not-taking-requests","black-taking-orders","black-taking-requests",
-"blood-splatter","blue-ornament","bongcheon-dong-ghost","breaking-bad","brick-block",
-"bring-me-the-horizon","bubbles","buggy","candycane","chibi-ffvii","christmas-lights",
-"clearance-sell","cloud-and-tifa","clown","colorful-christmas-lights","coming-soon",
-"costa-del-tifa","crazy","curved-vine","cutting-board","cyber-spine","dead-cowboy",
-"disco-ball","edens-cat","emoji-1","employees-only","empty-block-2","empty-block",
-"furnace-fire","garland","green-ornament","green-leaf-litter-2","green-leaf-litter-3",
-"green-leaf-litter-4","green-leaf-litter","half-life","happy-new-year","her-perspective",
-"his-perspective","how-do-i-turn-this-thing-off","i-was-crazy-once","inspirational-quote",
-"lantern","lightning","mario-coin","mario-flower","mario-mushroom","merry-christmas",
-"mew","moon","moss","mouse-hole","mouse","nami","new","nezuko","pink-ornament",
-"pipe-2","pipe","primogem","purple-ornament","question-block-2","question-block",
-"rainbow-ornament","red-ornament","replant-or-banned","retro-floor","running-blood",
-"sale","save-game","scp-096","see-no-evil","silver-ornament","snowfall","snowflake",
-"spider-string","spider","stardew-valley","straight-vine","strawberry-bundle-2",
-"strawberry-bundle","strawberry","super-mario-sunshine","switch","tanjiro",
-"temporarily-sold-out","the-boiled-one","the-fallen-angel","the-office",
-"the-straw-hat-pirates","theseedmc","tidus-and-yuna","trench",
-"under-construction-tape","white-all-are-welcome-here","white-commissions-closed",
-"white-commissions-open","white-drink-some-water","white-mapart-coming-soon-heart",
-"white-mapart-coming-soon","white-not-taking-orders","white-not-taking-requests",
-"white-taking-orders","white-taking-requests","yellow-ornament","zelda","zerotwo"
-];
-
-const existing = maparts.map(m => m.image.replace("images/", "").replace(".png",""));
-
-const missing = fileNames.filter(f => !existing.includes(f));
-
-console.log("MISSING:", missing);
-console.log("COUNT:", missing.length);
