@@ -237,11 +237,3 @@ const maparts = [
     category:    "Other Characters",
     transparent: false
   }
-
-];
-
-function findMapart(name) {
-  return maparts.filter(m =>
-    m.title.toLowerCase().includes(name.toLowerCase())
-  );
-}
