@@ -377,7 +377,109 @@ const maparts = [
   categories: ["Text"],
   transparent: true
 },
-  
+  // ==========================
+// ===== Gothic Pack (2) ====
+// ==========================
+{
+  image: "images/colorful-christmas-lights.png",
+  title: "Colorful Christmas Lights",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Decor"],
+  transparent: true
+},
+{
+  image: "images/crazy.png",
+  title: "Crazy",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Meme"],
+  transparent: true
+},
+{
+  image: "images/curved-vine.png",
+  title: "Curved Vine",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature", "Decor"],
+  transparent: true
+},
+{
+  image: "images/cutting-board.png",
+  title: "Cutting Board",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Objects"],
+  transparent: true
+},
+{
+  image: "images/emoji-1.png",
+  title: "Emoji",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Emoji", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/employees-only.png",
+  title: "Employees Only",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/furnace-fire.png",
+  title: "Furnace Fire",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/garland.png",
+  title: "Garland",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Decor"],
+  transparent: true
+},
+{
+  image: "images/green-leaf-litter.png",
+  title: "Green Leaf Litter",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature"],
+  transparent: true
+},
+{
+  image: "images/green-leaf-litter-2.png",
+  title: "Green Leaf Litter 2",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature"],
+  transparent: true
+},
   // ==========================
   // ===== Other Characters ===
   // ==========================
