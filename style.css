@@ -129,3 +129,42 @@ header button:hover { background-color: #ff8533; }
   header select, header button { width: 48%; margin-bottom: 8px; }
   #gallery { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; padding: 15px; }
 }
+/* ==========================
+   Multi-category filter tags
+   ========================== */
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.category-filters label {
+  cursor: pointer;
+}
+
+.category-filters input {
+  display: none;
+}
+
+.category-filters span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  color: #222;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.category-filters span:hover {
+  background: #ddd;
+}
+
+/* When selected */
+.category-filters input:checked + span {
+  background: #ff6600;
+  color: #fff;
+}
