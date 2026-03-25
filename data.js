@@ -481,6 +481,109 @@ const maparts = [
   transparent: true
 },
   // ==========================
+// ===== Gothic Pack (3) ====
+// ==========================
+{
+  image: "images/green-leaf-litter-3.png",
+  title: "Green Leaf Litter 3",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature"],
+  transparent: true
+},
+{
+  image: "images/green-leaf-litter-4.png",
+  title: "Green Leaf Litter 4",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature"],
+  transparent: true
+},
+{
+  image: "images/green-ornament.png",
+  title: "Green Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/half-life.png",
+  title: "Half Life",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming"],
+  transparent: true
+},
+{
+  image: "images/happy-new-year.png",
+  title: "Happy New Year",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Text"],
+  transparent: true
+},
+{
+  image: "images/how-do-i-turn-this-thing-off.png",
+  title: "How Do I Turn This Thing Off",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Meme", "Text"],
+  transparent: true
+},
+{
+  image: "images/inspirational-quote.png",
+  title: "Inspirational Quote",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/i-was-crazy-once.png",
+  title: "I Was Crazy Once",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Meme"],
+  transparent: true
+},
+{
+  image: "images/mario-coin.png",
+  title: "Mario Coin",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming", "Mario", "Objects"],
+  transparent: true
+},
+{
+  image: "images/mario-flower.png",
+  title: "Mario Flower",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming", "Mario", "Objects"],
+  transparent: true
+},
+  // ==========================
   // ===== Other Characters ===
   // ==========================
   {
