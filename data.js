@@ -114,7 +114,7 @@ const maparts = [
   warp:        "/warp gothic mapart",
   size:        "1x1",
   dateAdded:   "2026-03-24",
-  categories:  ["Horror"],
+  categories:  ["Horror", "Abstract", "Sci-Fi"],
   transparent: true
 },
 {
@@ -124,7 +124,7 @@ const maparts = [
   warp:        "/warp gothic mapart",
   size:        "1x1",
   dateAdded:   "2026-03-24",
-  categories:  ["Horror"],
+  categories:  ["Horror", "Abstract"],
   transparent: true
 },
 {
@@ -134,7 +134,7 @@ const maparts = [
   warp:        "/warp gothic mapart",
   size:        "1x2",
   dateAdded:   "2026-03-24",
-  categories:  ["Horror"],
+  categories:  ["Horror", "SCP", "Other Characters"],
   transparent: true
 },
 
@@ -148,7 +148,7 @@ const maparts = [
   warp:        "/warp gothic mapart",
   size:        "2x1",
   dateAdded:   "2026-03-24",
-  categories:  ["Decor"],
+  categories:  ["Decor", "Objects", "Aesthetic"],
   transparent: true
 },
 
