@@ -34,7 +34,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Animals"],
+    categories:  ["Animals", "Aesthetic"],
     transparent: false
   },
 
@@ -48,7 +48,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Demon Slayer"],
+    categories:  ["Demon Slayer", "Anime", "Characters"],
     transparent: false
   },
   {
@@ -58,7 +58,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Demon Slayer"],
+    categories:  ["Demon Slayer", "Anime", "Characters"],
     transparent: false
   },
 
@@ -72,7 +72,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Pokemon"],
+    categories:  ["Pokemon", "Characters"],
     transparent: false
   },
 
@@ -86,7 +86,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Legend of Zelda"],
+    categories:  ["Legend of Zelda", "Characters"],
     transparent: true
   },
 
@@ -100,7 +100,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "3x4",
     dateAdded:   "2025-12-29",
-    categories:  ["One Piece"],
+    categories:  ["One Piece", "Anime", "Characters"],
     transparent: false
   },
   
@@ -162,7 +162,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters"],
     transparent: false
   },
   {
@@ -172,7 +172,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters"],
     transparent: false
   },
   {
@@ -182,7 +182,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["One Piece", "Anime", "Characters"],
     transparent: false
   },
   {
@@ -192,7 +192,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters", "Chibi"],
     transparent: true
   },
   {
@@ -202,7 +202,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters"],
     transparent: false
   },
   {
@@ -212,7 +212,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Aesthetic"],
     transparent: false
   },
   {
@@ -222,7 +222,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Aesthetic", "Scenery"],
     transparent: false
   },
   {
@@ -232,7 +232,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Aesthetic", "Scenery"],
     transparent: false
   },
   {
@@ -242,7 +242,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters"],
     transparent: false
   },
   {
@@ -252,7 +252,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["One Piece", "Anime", "Characters"],
     transparent: false
   },
   {
@@ -262,7 +262,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Gaming", "Aesthetic"],
     transparent: true
   },
   {
@@ -272,7 +272,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Final Fantasy", "Characters"],
     transparent: false
   },
   {
@@ -282,7 +282,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Characters"],
+    categories:  ["Anime", "Characters"],
     transparent: false
   }
 
