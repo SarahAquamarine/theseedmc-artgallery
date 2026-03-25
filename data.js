@@ -10,7 +10,7 @@ const maparts = [
     warp:        "/warp artgallery",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    category:    "Misc",
+    categories:  ["Misc"],
     transparent: false
   },
   {
@@ -20,7 +20,7 @@ const maparts = [
     warp:        "/warp artgallery",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    category:    "Misc",
+    categories:  ["Misc"],
     transparent: false
   },
 
@@ -34,7 +34,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x2",
     dateAdded:   "2025-12-29",
-    category:    "Animals",
+    categories:  ["Animals"],
     transparent: false
   },
 
@@ -48,7 +48,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Demon Slayer",
+    categories:  ["Demon Slayer"],
     transparent: false
   },
   {
@@ -58,7 +58,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Demon Slayer",
+    categories:  ["Demon Slayer"],
     transparent: false
   },
 
@@ -72,7 +72,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Pokemon",
+    categories:  ["Pokemon"],
     transparent: false
   },
 
@@ -86,7 +86,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Legend of Zelda",
+    categories:  ["Legend of Zelda"],
     transparent: true
   },
 
@@ -100,7 +100,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "3x4",
     dateAdded:   "2025-12-29",
-    category:    "One Piece",
+    categories:  ["One Piece"],
     transparent: false
   },
 
@@ -114,7 +114,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -124,7 +124,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -134,7 +134,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -144,7 +144,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x2",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: true
   },
   {
@@ -154,7 +154,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -164,7 +164,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -174,7 +174,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -184,7 +184,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -194,7 +194,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -204,7 +204,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -214,7 +214,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: true
   },
   {
@@ -224,7 +224,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   },
   {
@@ -234,6 +234,185 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    category:    "Other Characters",
+    categories:  ["Other Characters"],
     transparent: false
   }
+
+];
+
+// ==========================
+// DOM elements
+// ==========================
+const gallery = document.getElementById("gallery");
+const searchInput = document.getElementById("search");
+const sizeFilter = document.getElementById("sizeFilter");
+const artistFilter = document.getElementById("artistFilter");
+const warpFilter = document.getElementById("warpFilter");
+const categoryFilters = document.getElementById("categoryFilters");
+const sortSelect = document.getElementById("sort");
+const bgFilter = document.getElementById("bgFilter");
+const resetBtn = document.getElementById("reset");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const mapartCount = document.getElementById("mapartCount");
+
+// ==========================
+// Mark new
+// ==========================
+function markNewMaparts() {
+  const today = new Date();
+  maparts.forEach(a => {
+    const added = new Date(a.dateAdded);
+    const diffDays = (today - added) / (1000 * 60 * 60 * 24);
+    a.newest = diffDays <= 7;
+  });
+}
+
+// ==========================
+// Populate filters
+// ==========================
+function populateFilters() {
+  const artists = [...new Set(maparts.map(a => a.artist))];
+  const warps = [...new Set(maparts.map(a => a.warp))];
+  const categories = [...new Set(maparts.flatMap(a => a.categories))];
+
+  artists.forEach(a => {
+    artistFilter.innerHTML += `<option value="${a}">${a}</option>`;
+  });
+
+  warps.forEach(w => {
+    warpFilter.innerHTML += `<option value="${w}">${w}</option>`;
+  });
+
+  categories.forEach(c => {
+    const label = document.createElement("label");
+    label.innerHTML = `
+      <input type="checkbox" value="${c}">
+      <span>${c}</span>
+    `;
+    categoryFilters.appendChild(label);
+  });
+}
+
+// ==========================
+// Render
+// ==========================
+function renderGallery(list) {
+  gallery.innerHTML = "";
+
+  if (list.length === 0) {
+    gallery.innerHTML = "<p>No mapart found.</p>";
+  }
+
+  list.forEach(art => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <img src="${art.image}" alt="${art.title}" loading="lazy">
+      <div class="card-content">
+        <h3>${art.title}</h3>
+        <p><strong>Artist:</strong> ${art.artist}</p>
+        <p><strong>Warp:</strong> <code>${art.warp}</code></p>
+        <p><strong>Size:</strong> ${art.size}</p>
+        <p><strong>Categories:</strong> ${art.categories.join(", ")}</p>
+        <button class="copyWarpBtn">Copy Warp</button>
+      </div>
+    `;
+
+    card.querySelector("img").addEventListener("click", () => {
+      lightboxImg.src = art.image;
+      lightbox.classList.add("show");
+    });
+
+    card.querySelector(".copyWarpBtn").addEventListener("click", () => {
+      navigator.clipboard.writeText(art.warp);
+    });
+
+    if (art.newest) {
+      const badge = document.createElement("div");
+      badge.className = "badge";
+      badge.textContent = "New!";
+      card.appendChild(badge);
+    }
+
+    gallery.appendChild(card);
+  });
+
+  mapartCount.textContent = `Showing ${list.length} of ${maparts.length} maparts`;
+}
+
+// ==========================
+// Filter
+// ==========================
+function filterGallery() {
+  const s = searchInput.value.toLowerCase();
+  const size = sizeFilter.value;
+  const artist = artistFilter.value;
+  const warp = warpFilter.value;
+  const sort = sortSelect.value;
+  const bgValue = bgFilter.value;
+
+  const selectedCategories = [
+    ...categoryFilters.querySelectorAll("input:checked")
+  ].map(cb => cb.value);
+
+  let filtered = maparts.filter(a =>
+    (a.title.toLowerCase().includes(s) ||
+     a.artist.toLowerCase().includes(s) ||
+     a.warp.toLowerCase().includes(s)) &&
+    (size === "" || a.size === size) &&
+    (artist === "" || a.artist === artist) &&
+    (warp === "" || a.warp === warp) &&
+    (
+      selectedCategories.length === 0 ||
+      selectedCategories.some(cat => a.categories.includes(cat))
+    ) &&
+    (
+      bgValue === "" ||
+      (bgValue === "transparent" && a.transparent) ||
+      (bgValue === "solid" && !a.transparent)
+    )
+  );
+
+  if (sort === "az") filtered.sort((a,b) => a.title.localeCompare(b.title));
+  if (sort === "size") filtered.sort((a,b) => a.size.localeCompare(b.size));
+  if (sort === "newest") filtered = [...filtered].reverse();
+
+  renderGallery(filtered);
+}
+
+// ==========================
+// Events
+// ==========================
+searchInput.addEventListener("input", filterGallery);
+sizeFilter.addEventListener("change", filterGallery);
+artistFilter.addEventListener("change", filterGallery);
+warpFilter.addEventListener("change", filterGallery);
+sortSelect.addEventListener("change", filterGallery);
+bgFilter.addEventListener("change", filterGallery);
+categoryFilters.addEventListener("change", filterGallery);
+
+resetBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  sizeFilter.value = "";
+  artistFilter.value = "";
+  warpFilter.value = "";
+  sortSelect.value = "";
+  bgFilter.value = "";
+
+  categoryFilters.querySelectorAll("input").forEach(cb => cb.checked = false);
+
+  renderGallery(maparts);
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+});
+
+// ==========================
+// Init
+// ==========================
+markNewMaparts();
+populateFilters();
+renderGallery(maparts);
