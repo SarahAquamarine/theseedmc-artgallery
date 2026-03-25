@@ -1051,7 +1051,226 @@ const maparts = [
     dateAdded:   "2025-12-29",
     categories:  ["Anime", "Characters"],
     transparent: false
-  }
+  },
+  
+// ==========================
+// ===== Missing Maps =======
+// ==========================
+
+{
+  image: "images/bring-me-the-horizon.png",
+  title: "Bring Me The Horizon",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Music", "Aesthetic"],
+  transparent: true
+},
+
+// ===== Black Text =====
+{
+  image: "images/black-all-are-welcome-here.png",
+  title: "All Are Welcome Here",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-commissions-closed.png",
+  title: "Commissions Closed",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-commissions-open.png",
+  title: "Commissions Open",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-drink-some-water.png",
+  title: "Drink Some Water",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/black-mapart-coming-soon.png",
+  title: "Mapart Coming Soon",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/black-mapart-coming-soon-heart.png",
+  title: "Mapart Coming Soon ❤️",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/black-not-taking-orders.png",
+  title: "Not Taking Orders",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-not-taking-requests.png",
+  title: "Not Taking Requests",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-taking-orders.png",
+  title: "Taking Orders",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/black-taking-requests.png",
+  title: "Taking Requests",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+
+// ===== White Text =====
+{
+  image: "images/white-all-are-welcome-here.png",
+  title: "All Are Welcome Here (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-commissions-closed.png",
+  title: "Commissions Closed (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-commissions-open.png",
+  title: "Commissions Open (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-drink-some-water.png",
+  title: "Drink Some Water (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/white-mapart-coming-soon.png",
+  title: "Mapart Coming Soon (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/white-mapart-coming-soon-heart.png",
+  title: "Mapart Coming Soon ❤️ (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+{
+  image: "images/white-not-taking-orders.png",
+  title: "Not Taking Orders (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-not-taking-requests.png",
+  title: "Not Taking Requests (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-taking-orders.png",
+  title: "Taking Orders (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/white-taking-requests.png",
+  title: "Taking Requests (White)",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
 
 ];
 
