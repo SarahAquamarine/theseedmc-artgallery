@@ -134,7 +134,7 @@ const maparts = [
   warp:        "/warp gothic mapart",
   size:        "1x2",
   dateAdded:   "2026-03-24",
-  categories:  ["Horror", "SCP", "Other Characters"],
+  categories:  ["Horror", "SCP", "Characters"],
   transparent: true
 },
 
@@ -162,7 +162,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -172,7 +172,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -182,7 +182,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -192,7 +192,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: true
   },
   {
@@ -202,7 +202,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x2",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -212,7 +212,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -222,7 +222,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -232,7 +232,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -242,7 +242,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -252,7 +252,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -262,7 +262,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: true
   },
   {
@@ -272,7 +272,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   },
   {
@@ -282,7 +282,7 @@ const maparts = [
     warp:        "/warp mapart by eden",
     size:        "2x3",
     dateAdded:   "2025-12-29",
-    categories:  ["Other Characters"],
+    categories:  ["Characters"],
     transparent: false
   }
 
