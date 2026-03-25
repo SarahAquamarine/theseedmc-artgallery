@@ -10,7 +10,7 @@ const maparts = [
     warp:        "/warp artgallery",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Misc"],
+    categories:  ["Server", "Utility"],
     transparent: false
   },
   {
@@ -20,7 +20,7 @@ const maparts = [
     warp:        "/warp artgallery",
     size:        "1x1",
     dateAdded:   "2025-12-29",
-    categories:  ["Misc"],
+    categories:  ["Server", "Utility"],
     transparent: false
   },
 
