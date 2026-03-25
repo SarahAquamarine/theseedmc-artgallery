@@ -274,6 +274,110 @@ const maparts = [
   transparent: false
 },
   
+// ==========================
+// ===== Gothic Pack (Bulk) ==
+// ==========================
+{
+  image: "images/angel.png",
+  title: "Angel",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Fantasy", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/back-in-stock.png",
+  title: "Back In Stock",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/beheaded-statue.png",
+  title: "Beheaded Statue",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror", "Statue"],
+  transparent: true
+},
+{
+  image: "images/better-call-saul.png",
+  title: "Better Call Saul",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["TV", "Meme"],
+  transparent: true
+},
+{
+  image: "images/blood-splatter.png",
+  title: "Blood Splatter",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror", "Abstract"],
+  transparent: true
+},
+{
+  image: "images/breaking-bad.png",
+  title: "Breaking Bad",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["TV"],
+  transparent: true
+},
+{
+  image: "images/bubbles.png",
+  title: "Bubbles",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/candycane.png",
+  title: "Candy Cane",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/clearance-sell.png",
+  title: "Clearance Sale",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/coming-soon.png",
+  title: "Coming Soon",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text"],
+  transparent: true
+},
+  
   // ==========================
   // ===== Other Characters ===
   // ==========================
