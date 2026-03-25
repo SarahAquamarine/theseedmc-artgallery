@@ -685,7 +685,240 @@ const maparts = [
   dateAdded: "2026-03-24",
   categories: ["Seasonal", "Aesthetic"],
   transparent: true
-}
+},
+  // ==========================
+// ===== Gothic Pack (5) ====
+// ==========================
+{
+  image: "images/rainbow-ornament.png",
+  title: "Rainbow Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/red-ornament.png",
+  title: "Red Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/retro-floor.png",
+  title: "Retro Floor",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Aesthetic", "Decor"],
+  transparent: true
+},
+{
+  image: "images/sale.png",
+  title: "Sale",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/see-no-evil.png",
+  title: "See No Evil",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/silver-ornament.png",
+  title: "Silver Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/snowfall.png",
+  title: "Snowfall",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/snowflake.png",
+  title: "Snowflake",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/spider.png",
+  title: "Spider",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror", "Animals"],
+  transparent: true
+},
+{
+  image: "images/spider-string.png",
+  title: "Spider String",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror", "Decor"],
+  transparent: true
+},
+{
+  image: "images/stardew-valley.png",
+  title: "Stardew Valley",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming"],
+  transparent: true
+},
+{
+  image: "images/straight-vine.png",
+  title: "Straight Vine",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Nature", "Decor"],
+  transparent: true
+},
+{
+  image: "images/strawberry.png",
+  title: "Strawberry",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Food", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/strawberry-bundle.png",
+  title: "Strawberry Bundle",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Food", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/strawberry-bundle-2.png",
+  title: "Strawberry Bundle 2",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Food", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/super-mario-sunshine.png",
+  title: "Super Mario Sunshine",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming", "Mario"],
+  transparent: true
+},
+{
+  image: "images/switch.png",
+  title: "Switch",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Gaming"],
+  transparent: true
+},
+{
+  image: "images/temporarily-sold-out.png",
+  title: "Temporarily Sold Out",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/the-boiled-one.png",
+  title: "The Boiled One",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Horror"],
+  transparent: true
+},
+{
+  image: "images/the-fallen-angel.png",
+  title: "The Fallen Angel",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Fantasy", "Horror"],
+  transparent: true
+},
+{
+  image: "images/the-office.png",
+  title: "The Office",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["TV"],
+  transparent: true
+},
+{
+  image: "images/under-construction-tape.png",
+  title: "Under Construction Tape",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Utility"],
+  transparent: true
+},
+{
+  image: "images/yellow-ornament.png",
+  title: "Yellow Ornament",
+  artist: "BringTheHorizon",
+  warp: "/warp gothic mapart",
+  size: "1x1",
+  dateAdded: "2026-03-24",
+  categories: ["Seasonal", "Aesthetic"],
+  transparent: true
+},
   // ==========================
   // ===== Other Characters ===
   // ==========================
