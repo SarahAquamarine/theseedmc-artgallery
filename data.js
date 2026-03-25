@@ -1305,111 +1305,116 @@ const maparts = [
 
 // ==========================
 // DOM elements
-// ==========================
 const gallery = document.getElementById("gallery");
 const searchInput = document.getElementById("search");
 const sizeFilter = document.getElementById("sizeFilter");
 const artistFilter = document.getElementById("artistFilter");
 const warpFilter = document.getElementById("warpFilter");
-const categoryFilters = document.getElementById("categoryFilters");
 const sortSelect = document.getElementById("sort");
 const bgFilter = document.getElementById("bgFilter");
 const resetBtn = document.getElementById("reset");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const mapartCount = document.getElementById("mapartCount");
+const categoryFilters = document.getElementById("categoryFilters");
 
-// ==========================
-// Mark new
-// ==========================
+// NEW badge
 function markNewMaparts() {
   const today = new Date();
   maparts.forEach(a => {
-    const added = new Date(a.dateAdded);
-    const diffDays = (today - added) / (1000 * 60 * 60 * 24);
-    a.newest = diffDays <= 7;
+    if (a.dateAdded) {
+      const added = new Date(a.dateAdded);
+      const diffDays = (today - added) / (1000 * 60 * 60 * 24);
+      a.newest = diffDays <= 7;
+    } else {
+      a.newest = false;
+    }
   });
 }
 
-// ==========================
 // Populate filters
-// ==========================
 function populateFilters() {
   const artists = [...new Set(maparts.map(a => a.artist))];
   const warps = [...new Set(maparts.map(a => a.warp))];
-  const categories = [...new Set(
-  maparts.flatMap(a => a.categories)
-)].sort((a, b) => a.localeCompare(b));
 
   artists.forEach(a => {
-    artistFilter.innerHTML += `<option value="${a}">${a}</option>`;
+    const option = document.createElement("option");
+    option.value = a;
+    option.textContent = a;
+    artistFilter.appendChild(option);
   });
 
   warps.forEach(w => {
-    warpFilter.innerHTML += `<option value="${w}">${w}</option>`;
+    const option = document.createElement("option");
+    option.value = w;
+    option.textContent = w;
+    warpFilter.appendChild(option);
   });
+
+  // CATEGORY CHECKBOXES
+  const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
 
   categories.forEach(c => {
     const label = document.createElement("label");
-    label.innerHTML = `
-      <input type="checkbox" value="${c}">
-      <span>${c}</span>
-    `;
+    const checkbox = document.createElement("input");
+
+    checkbox.type = "checkbox";
+    checkbox.value = c;
+
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(c));
+
     categoryFilters.appendChild(label);
   });
 }
 
-// ==========================
-// Render
-// ==========================
+// Render gallery
 function renderGallery(list) {
   gallery.innerHTML = "";
 
   if (list.length === 0) {
     gallery.innerHTML = "<p>No mapart found.</p>";
+  } else {
+    list.forEach(art => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${art.image}" alt="${art.title}" loading="lazy">
+        <div class="card-content">
+          <h3>${art.title}</h3>
+          <p><strong>Artist:</strong> ${art.artist}</p>
+          <p><strong>Warp:</strong> <code>${art.warp}</code></p>
+          <p><strong>Size:</strong> ${art.size}</p>
+          <p><strong>Category:</strong> ${(art.categories || []).join(", ")}</p>
+          <button class="copyWarpBtn">Copy Warp</button>
+        </div>
+      `;
+
+      card.querySelector("img").addEventListener("click", () => {
+        lightboxImg.src = art.image;
+        lightbox.classList.add("show");
+      });
+
+      card.querySelector(".copyWarpBtn").addEventListener("click", () => {
+        navigator.clipboard.writeText(art.warp);
+      });
+
+      if (art.newest) {
+        const badge = document.createElement("div");
+        badge.className = "badge";
+        badge.textContent = "New!";
+        card.appendChild(badge);
+      }
+
+      gallery.appendChild(card);
+    });
   }
-
-  list.forEach(art => {
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-      <img src="${art.image}" alt="${art.title}" loading="lazy">
-      <div class="card-content">
-        <h3>${art.title}</h3>
-        <p><strong>Artist:</strong> ${art.artist}</p>
-        <p><strong>Warp:</strong> <code>${art.warp}</code></p>
-        <p><strong>Size:</strong> ${art.size}</p>
-        <p><strong>Categories:</strong> ${art.categories.join(", ")}</p>
-        <button class="copyWarpBtn">Copy Warp</button>
-      </div>
-    `;
-
-    card.querySelector("img").addEventListener("click", () => {
-      lightboxImg.src = art.image;
-      lightbox.classList.add("show");
-    });
-
-    card.querySelector(".copyWarpBtn").addEventListener("click", () => {
-      navigator.clipboard.writeText(art.warp);
-    });
-
-    if (art.newest) {
-      const badge = document.createElement("div");
-      badge.className = "badge";
-      badge.textContent = "New!";
-      card.appendChild(badge);
-    }
-
-    gallery.appendChild(card);
-  });
 
   mapartCount.textContent = `Showing ${list.length} of ${maparts.length} maparts`;
 }
 
-// ==========================
-// Filter
-// ==========================
+// Filter logic
 function filterGallery() {
   const s = searchInput.value.toLowerCase();
   const size = sizeFilter.value;
@@ -1418,9 +1423,8 @@ function filterGallery() {
   const sort = sortSelect.value;
   const bgValue = bgFilter.value;
 
-  const selectedCategories = [
-    ...categoryFilters.querySelectorAll("input:checked")
-  ].map(cb => cb.value);
+  const selectedCategories = [...categoryFilters.querySelectorAll("input:checked")]
+    .map(cb => cb.value);
 
   let filtered = maparts.filter(a =>
     (a.title.toLowerCase().includes(s) ||
@@ -1429,10 +1433,8 @@ function filterGallery() {
     (size === "" || a.size === size) &&
     (artist === "" || a.artist === artist) &&
     (warp === "" || a.warp === warp) &&
-    (
-      selectedCategories.length === 0 ||
-      selectedCategories.some(cat => a.categories.includes(cat))
-    ) &&
+    (selectedCategories.length === 0 ||
+      selectedCategories.some(cat => (a.categories || []).includes(cat))) &&
     (
       bgValue === "" ||
       (bgValue === "transparent" && a.transparent) ||
@@ -1442,14 +1444,12 @@ function filterGallery() {
 
   if (sort === "az") filtered.sort((a,b) => a.title.localeCompare(b.title));
   if (sort === "size") filtered.sort((a,b) => a.size.localeCompare(b.size));
-  if (sort === "newest") filtered = [...filtered].reverse();
+  if (sort === "newest") filtered.reverse();
 
   renderGallery(filtered);
 }
 
-// ==========================
 // Events
-// ==========================
 searchInput.addEventListener("input", filterGallery);
 sizeFilter.addEventListener("change", filterGallery);
 artistFilter.addEventListener("change", filterGallery);
@@ -1459,14 +1459,20 @@ bgFilter.addEventListener("change", filterGallery);
 categoryFilters.addEventListener("change", filterGallery);
 
 resetBtn.addEventListener("click", () => {
+  document.querySelectorAll("#categoryFilters input").forEach(cb => cb.checked = false);
   searchInput.value = "";
   sizeFilter.value = "";
   artistFilter.value = "";
   warpFilter.value = "";
   sortSelect.value = "";
   bgFilter.value = "";
-
-  categoryFilters.querySelectorAll("input").forEach(cb => cb.checked = false);
-
   renderGallery(maparts);
 });
+
+// Init
+markNewMaparts();
+populateFilters();
+renderGallery(maparts);
+
+// Lightbox close
+lightbox.addEventListener("click", () => lightbox.classList.remove("show"));
