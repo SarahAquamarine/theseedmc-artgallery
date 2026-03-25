@@ -416,3 +416,6 @@ lightbox.addEventListener("click", () => {
 markNewMaparts();
 populateFilters();
 renderGallery(maparts);
+}
+
+];
