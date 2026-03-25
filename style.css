@@ -168,3 +168,22 @@ header button:hover { background-color: #ff8533; }
   background: #ff6600;
   color: #fff;
 }
+#categoryFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#categoryFilters label {
+  background: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#categoryFilters input {
+  margin-right: 5px;
+}
