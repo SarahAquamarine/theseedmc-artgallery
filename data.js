@@ -103,6 +103,54 @@ const maparts = [
     categories:  ["One Piece"],
     transparent: false
   },
+  
+  // ==========================
+  // ===== Horror ==========
+  // ==========================
+  {
+    image:       "images/cyber-spine.png",
+    title:       "Cyber Spine",
+    artist:      "BringTheHorizon",
+    warp:        "/warp gothic mapart",
+    size:        "1x1",
+    dateAdded:   "2026-03-24",
+    categories:  ["Horror"],
+    transparent: true
+  },
+  {
+    image:       "images/running-blood.png",
+    title:       "Running Blood",
+    artist:      "BringTheHorizon",
+    warp:        "/warp gothic mapart",
+    size:        "1x1",
+    dateAdded:   "2026-03-24",
+    categories:  ["Horror"],
+    transparent: true
+  },
+    {
+    image:       "images/scp-096.png",
+    title:       "SCP 096",
+    artist:      "BringTheHorizon",
+    warp:        "/warp gothic mapart",
+    size:        "1x2",
+    dateAdded:   "2026-03-24",
+    categories:  ["Horror"],
+    transparent: true
+  },
+
+  // ==========================
+  // ===== Decor ==========
+  // ==========================
+    {
+    image:       "images/lantern.png",
+    title:       "Lantern",
+    artist:      "BringTheHorizon",
+    warp:        "/warp gothic mapart",
+    size:        "2x1",
+    dateAdded:   "2026-03-24",
+    categories:  ["Decor"],
+    transparent: true
+  },
 
   // ==========================
   // ===== Other Characters ===
