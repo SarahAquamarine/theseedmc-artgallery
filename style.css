@@ -187,7 +187,7 @@ header button:hover { background-color: #ff8533; }
 #categoryFilters input {
   margin-right: 5px;
 }
-/* ===== CATEGORY CHIPS ===== */
+/* ===== CHIPS ===== */
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -204,19 +204,13 @@ header button:hover { background-color: #ff8533; }
   font-size: 13px;
   cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  border: 1px solid transparent;
 }
 
-/* hover */
 .chip:hover {
   background: #ddd;
 }
 
-/* ACTIVE (selected) */
 .chip.active {
   background: #00bfff;
-  color: #fff;
-  border: 1px solid #009acd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: white;
 }
