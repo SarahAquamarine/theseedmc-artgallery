@@ -1645,6 +1645,46 @@ const maparts = [
   categories: ["Fantasy", "Creatures", "Aesthetic"],
   transparent: true
 },
+{
+  image: "images/coffee-frog.png",
+  title: "Coffee Frog",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "2x2",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute", "Food"],
+  transparent: true
+},
+{
+  image: "images/pumpkin-frog.png",
+  title: "Pumpkin Frog",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "2x2",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute", "Seasonal"],
+  transparent: true
+},
+{
+  image: "images/turtle.png",
+  title: "Turtle",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "2x2",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute"],
+  transparent: true
+},
+{
+  image: "images/the-council-of-frogs.png",
+  title: "Council of Frogs",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "2x2",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute", "Fantasy"],
+  transparent: false
+},
 ];
 
 // ==========================
