@@ -1685,22 +1685,21 @@ function populateFilters() {
     warpFilter.appendChild(option);
   });
 
-  // CATEGORY CHECKBOXES
-  const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
+  // CATEGORY CHIPS
+const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
 
-  categories.forEach(c => {
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
+categories.forEach(c => {
+  const chip = document.createElement("div");
+  chip.className = "chip";
+  chip.textContent = c;
 
-    checkbox.type = "checkbox";
-    checkbox.value = c;
-
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(c));
-
-    categoryFilters.appendChild(label);
+  chip.addEventListener("click", () => {
+    chip.classList.toggle("active");
+    filterGallery();
   });
-}
+
+  categoryFilters.appendChild(chip);
+});
 
 // Render gallery
 function renderGallery(list) {
