@@ -1652,6 +1652,8 @@ const lightboxImg = document.getElementById("lightbox-img");
 const mapartCount = document.getElementById("mapartCount");
 const categoryFilters = document.getElementById("categoryFilters");
 
+
+// ==========================
 // NEW badge
 function markNewMaparts() {
   const today = new Date();
@@ -1666,6 +1668,8 @@ function markNewMaparts() {
   });
 }
 
+
+// ==========================
 // Populate filters
 function populateFilters() {
   const artists = [...new Set(maparts.map(a => a.artist))];
@@ -1685,22 +1689,25 @@ function populateFilters() {
     warpFilter.appendChild(option);
   });
 
-  // CATEGORY CHIPS
-const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
+  // ===== CATEGORY CHIPS =====
+  const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
 
-categories.forEach(c => {
-  const chip = document.createElement("div");
-  chip.className = "chip";
-  chip.textContent = c;
+  categories.forEach(c => {
+    const chip = document.createElement("div");
+    chip.className = "chip";
+    chip.textContent = c;
 
-  chip.addEventListener("click", () => {
-    chip.classList.toggle("active");
-    filterGallery();
+    chip.addEventListener("click", () => {
+      chip.classList.toggle("active");
+      filterGallery();
+    });
+
+    categoryFilters.appendChild(chip);
   });
+}
 
-  categoryFilters.appendChild(chip);
-});
 
+// ==========================
 // Render gallery
 function renderGallery(list) {
   gallery.innerHTML = "";
@@ -1747,6 +1754,8 @@ function renderGallery(list) {
   mapartCount.textContent = `Showing ${list.length} of ${maparts.length} maparts`;
 }
 
+
+// ==========================
 // Filter logic
 function filterGallery() {
   const s = searchInput.value.toLowerCase();
@@ -1756,8 +1765,9 @@ function filterGallery() {
   const sort = sortSelect.value;
   const bgValue = bgFilter.value;
 
-  const selectedCategories = [...categoryFilters.querySelectorAll("input:checked")]
-    .map(cb => cb.value);
+  // ✅ CHIP SYSTEM
+  const selectedCategories = [...categoryFilters.querySelectorAll(".chip.active")]
+    .map(chip => chip.textContent);
 
   let filtered = maparts.filter(a =>
     (a.title.toLowerCase().includes(s) ||
@@ -1766,8 +1776,10 @@ function filterGallery() {
     (size === "" || a.size === size) &&
     (artist === "" || a.artist === artist) &&
     (warp === "" || a.warp === warp) &&
-    (selectedCategories.length === 0 ||
-      selectedCategories.some(cat => (a.categories || []).includes(cat))) &&
+    (
+      selectedCategories.length === 0 ||
+      selectedCategories.some(cat => (a.categories || []).includes(cat))
+    ) &&
     (
       bgValue === "" ||
       (bgValue === "transparent" && a.transparent) ||
@@ -1782,6 +1794,8 @@ function filterGallery() {
   renderGallery(filtered);
 }
 
+
+// ==========================
 // Events
 searchInput.addEventListener("input", filterGallery);
 sizeFilter.addEventListener("change", filterGallery);
@@ -1789,23 +1803,32 @@ artistFilter.addEventListener("change", filterGallery);
 warpFilter.addEventListener("change", filterGallery);
 sortSelect.addEventListener("change", filterGallery);
 bgFilter.addEventListener("change", filterGallery);
-categoryFilters.addEventListener("change", filterGallery);
 
+
+// ==========================
+// Reset
 resetBtn.addEventListener("click", () => {
-  document.querySelectorAll("#categoryFilters input").forEach(cb => cb.checked = false);
+  document.querySelectorAll(".chip").forEach(chip => chip.classList.remove("active"));
+
   searchInput.value = "";
   sizeFilter.value = "";
   artistFilter.value = "";
   warpFilter.value = "";
   sortSelect.value = "";
   bgFilter.value = "";
+
   renderGallery(maparts);
 });
 
+
+// ==========================
 // Init
 markNewMaparts();
 populateFilters();
 renderGallery(maparts);
 
+
+// ==========================
 // Lightbox close
 lightbox.addEventListener("click", () => lightbox.classList.remove("show"));
+🚨 IMPORTANT
