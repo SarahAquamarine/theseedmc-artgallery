@@ -187,3 +187,36 @@ header button:hover { background-color: #ff8533; }
 #categoryFilters input {
   margin-right: 5px;
 }
+/* ===== CATEGORY CHIPS ===== */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  color: #222;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+/* hover */
+.chip:hover {
+  background: #ddd;
+}
+
+/* ACTIVE (selected) */
+.chip.active {
+  background: #00bfff;
+  color: #fff;
+  border: 1px solid #009acd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
