@@ -1635,6 +1635,16 @@ const maparts = [
   categories: ["Minecraft", "Mobs"],
   transparent: true
 },
+{
+  image: "images/foodie.png",
+  title: "Foodie",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x2",
+  dateAdded: "2026-04-03",
+  categories: ["Fantasy", "Creatures", "Aesthetic"],
+  transparent: true
+},
 ];
 
 // ==========================
