@@ -1,1834 +1,274 @@
-const maparts = [
-
-  // ==========================
-  // ===== Misc ===============
-  // ==========================
-  {
-    image:       "images/replant-or-banned.png",
-    title:       "Replant or Banned",
-    artist:      "SarahAzureHeart",
-    warp:        "/warp artgallery",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Server", "Utility"],
-    transparent: false
-  },
-  {
-    image:       "images/theseedmc.png",
-    title:       "TheSeedMC",
-    artist:      "SarahAzureHeart",
-    warp:        "/warp artgallery",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Server", "Utility"],
-    transparent: false
-  },
-
-  // ==========================
-  // ===== Animals ============
-  // ==========================
-  {
-    image:       "images/edens-cat.png",
-    title:       "Eden's Cat",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Animals", "Aesthetic"],
-    transparent: false
-  },
-
-  // ==========================
-  // ===== Demon Slayer =======
-  // ==========================
-  {
-    image:       "images/nezuko.png",
-    title:       "Nezuko",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Demon Slayer", "Anime", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/tanjiro.png",
-    title:       "Tanjiro",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Demon Slayer", "Anime", "Characters"],
-    transparent: false
-  },
-
-  // ==========================
-  // ===== Pokemon ============
-  // ==========================
-  {
-    image:       "images/mew.png",
-    title:       "Mew",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Pokemon", "Characters"],
-    transparent: false
-  },
-
-  // ==========================
-  // ===== Legend of Zelda ====
-  // ==========================
-  {
-    image:       "images/zelda.png",
-    title:       "Zelda",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Legend of Zelda", "Characters"],
-    transparent: true
-  },
-
-  // ==========================
-  // ===== One Piece ==========
-  // ==========================
-  {
-    image:       "images/the-straw-hat-pirates.png",
-    title:       "The Straw Hat Pirates",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "3x4",
-    dateAdded:   "2025-12-29",
-    categories:  ["One Piece", "Anime", "Characters"],
-    transparent: false
-  },
-  
 // ==========================
-// ===== Horror =============
-// ==========================
-{
-  image:       "images/cyber-spine.png",
-  title:       "Cyber Spine",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "Abstract", "Sci-Fi"],
-  transparent: true
-},
-{
-  image:       "images/running-blood.png",
-  title:       "Running Blood",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "Abstract"],
-  transparent: true
-},
-{
-  image:       "images/scp-096.png",
-  title:       "SCP 096",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x2",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "SCP", "Characters"],
-  transparent: true
-},
-{
-  image:       "images/clown.png",
-  title:       "Clown",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "Characters"],
-  transparent: false
-},
-{
-  image:       "images/dead-cowboy.png",
-  title:       "Dead Cowboy",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "Characters"],
-  transparent: false
-},
-{
-  image:       "images/trench.png",
-  title:       "Trench",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Horror", "Aesthetic"],
-  transparent: false
-},
-  
-// ==========================
-// ===== Decor ==============
-// ==========================
-{
-  image:       "images/lantern.png",
-  title:       "Lantern",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "2x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Decor", "Objects", "Aesthetic"],
-  transparent: true
-},
+// HELPERS
+function formatTitle(name) {
+  return name
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function createMapart({
+  name,
+  artist,
+  warp,
+  size = "1x1",
+  date,
+  categories = [],
+  transparent = true
+}) {
+  return {
+    image: `images/${name}.png`,
+    title: formatTitle(name),
+    artist,
+    warp,
+    size,
+    dateAdded: date,
+    categories,
+    transparent
+  };
+}
 
 // ==========================
-// ===== Mario / Gaming =====
-// ==========================
-{
-  image:       "images/brick-block.png",
-  title:       "Brick Block",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Gaming", "Mario", "Objects"],
-  transparent: false
-},
-{
-  image:       "images/question-block.png",
-  title:       "Question Block",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Gaming", "Mario", "Objects"],
-  transparent: false
-},
-{
-  image:       "images/question-block-2.png",
-  title:       "Question Block 2",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Gaming", "Mario", "Objects"],
-  transparent: false
-},
-{
-  image:       "images/pipe.png",
-  title:       "Pipe",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Gaming", "Mario", "Objects"],
-  transparent: false
-},
-{
-  image:       "images/pipe-2.png",
-  title:       "Pipe 2",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Gaming", "Mario", "Objects"],
-  transparent: false
-},
+// ===== PACKS ==============
 
-// ==========================
-// ===== Objects / Utility ==
-// ==========================
-{
-  image:       "images/empty-block.png",
-  title:       "Empty Block",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Objects", "Utility"],
-  transparent: false
-},
-{
-  image:       "images/empty-block-2.png",
-  title:       "Empty Block 2",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Objects", "Utility"],
-  transparent: false
-},
+// ===== Sarah =====
+const sarahPack = [
+  ["replant-or-banned", ["Server","Utility"], false],
+  ["theseedmc", ["Server","Utility"], false],
+];
 
-// ==========================
-// ===== Aesthetic =========
-// ==========================
-{
-  image:       "images/disco-ball.png",
-  title:       "Disco Ball",
-  artist:      "BringTheHorizon",
-  warp:        "/warp gothic mapart",
-  size:        "1x1",
-  dateAdded:   "2026-03-24",
-  categories:  ["Aesthetic", "Objects"],
-  transparent: false
-},
-  
-// ==========================
-// ===== Gothic Pack (Bulk) ==
-// ==========================
-{
-  image: "images/angel.png",
-  title: "Angel",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Fantasy", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/back-in-stock.png",
-  title: "Back In Stock",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/beheaded-statue.png",
-  title: "Beheaded Statue",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror", "Statue"],
-  transparent: true
-},
-{
-  image: "images/better-call-saul.png",
-  title: "Better Call Saul",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["TV", "Meme"],
-  transparent: true
-},
-{
-  image: "images/blood-splatter.png",
-  title: "Blood Splatter",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror", "Abstract"],
-  transparent: true
-},
-{
-  image: "images/breaking-bad.png",
-  title: "Breaking Bad",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["TV"],
-  transparent: true
-},
-{
-  image: "images/bubbles.png",
-  title: "Bubbles",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/candycane.png",
-  title: "Candy Cane",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/clearance-sell.png",
-  title: "Clearance Sale",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/coming-soon.png",
-  title: "Coming Soon",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-  // ==========================
-// ===== Gothic Pack (2) ====
-// ==========================
-{
-  image: "images/colorful-christmas-lights.png",
-  title: "Colorful Christmas Lights",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Decor"],
-  transparent: true
-},
-{
-  image: "images/crazy.png",
-  title: "Crazy",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Meme"],
-  transparent: true
-},
-{
-  image: "images/curved-vine.png",
-  title: "Curved Vine",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature", "Decor"],
-  transparent: true
-},
-{
-  image: "images/cutting-board.png",
-  title: "Cutting Board",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Objects"],
-  transparent: true
-},
-{
-  image: "images/emoji-1.png",
-  title: "Emoji",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Emoji", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/employees-only.png",
-  title: "Employees Only",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/furnace-fire.png",
-  title: "Furnace Fire",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/garland.png",
-  title: "Garland",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Decor"],
-  transparent: true
-},
-{
-  image: "images/green-leaf-litter.png",
-  title: "Green Leaf Litter",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature"],
-  transparent: true
-},
-{
-  image: "images/green-leaf-litter-2.png",
-  title: "Green Leaf Litter 2",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature"],
-  transparent: true
-},
-  // ==========================
-// ===== Gothic Pack (3) ====
-// ==========================
-{
-  image: "images/green-leaf-litter-3.png",
-  title: "Green Leaf Litter 3",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature"],
-  transparent: true
-},
-{
-  image: "images/green-leaf-litter-4.png",
-  title: "Green Leaf Litter 4",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature"],
-  transparent: true
-},
-{
-  image: "images/green-ornament.png",
-  title: "Green Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/half-life.png",
-  title: "Half Life",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming"],
-  transparent: true
-},
-{
-  image: "images/happy-new-year.png",
-  title: "Happy New Year",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Text"],
-  transparent: true
-},
-{
-  image: "images/how-do-i-turn-this-thing-off.png",
-  title: "How Do I Turn This Thing Off",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Meme", "Text"],
-  transparent: true
-},
-{
-  image: "images/inspirational-quote.png",
-  title: "Inspirational Quote",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/i-was-crazy-once.png",
-  title: "I Was Crazy Once",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Meme"],
-  transparent: true
-},
-{
-  image: "images/mario-coin.png",
-  title: "Mario Coin",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming", "Mario", "Objects"],
-  transparent: true
-},
-{
-  image: "images/mario-flower.png",
-  title: "Mario Flower",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming", "Mario", "Objects"],
-  transparent: true
-},
-  // ==========================
-// ===== Gothic Pack (4) ====
-// ==========================
-{
-  image: "images/mario-mushroom.png",
-  title: "Mario Mushroom",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming", "Mario", "Objects"],
-  transparent: true
-},
-{
-  image: "images/merry-christmas.png",
-  title: "Merry Christmas",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Text"],
-  transparent: true
-},
-{
-  image: "images/moon.png",
-  title: "Moon",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/moss.png",
-  title: "Moss",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature"],
-  transparent: true
-},
-{
-  image: "images/mouse.png",
-  title: "Mouse",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Animals"],
-  transparent: true
-},
-{
-  image: "images/mouse-hole.png",
-  title: "Mouse Hole",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Objects", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/new.png",
-  title: "New",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/pink-ornament.png",
-  title: "Pink Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/primogem.png",
-  title: "Primogem",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming"],
-  transparent: true
-},
-{
-  image: "images/purple-ornament.png",
-  title: "Purple Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-  // ==========================
-// ===== Gothic Pack (5) ====
-// ==========================
-{
-  image: "images/rainbow-ornament.png",
-  title: "Rainbow Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/red-ornament.png",
-  title: "Red Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/retro-floor.png",
-  title: "Retro Floor",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Aesthetic", "Decor"],
-  transparent: true
-},
-{
-  image: "images/sale.png",
-  title: "Sale",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/see-no-evil.png",
-  title: "See No Evil",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/silver-ornament.png",
-  title: "Silver Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/snowfall.png",
-  title: "Snowfall",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/snowflake.png",
-  title: "Snowflake",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/spider.png",
-  title: "Spider",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror", "Animals"],
-  transparent: true
-},
-{
-  image: "images/spider-string.png",
-  title: "Spider String",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror", "Decor"],
-  transparent: true
-},
-{
-  image: "images/stardew-valley.png",
-  title: "Stardew Valley",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming"],
-  transparent: true
-},
-{
-  image: "images/straight-vine.png",
-  title: "Straight Vine",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Nature", "Decor"],
-  transparent: true
-},
-{
-  image: "images/strawberry.png",
-  title: "Strawberry",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Food", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/strawberry-bundle.png",
-  title: "Strawberry Bundle",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Food", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/strawberry-bundle-2.png",
-  title: "Strawberry Bundle 2",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Food", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/super-mario-sunshine.png",
-  title: "Super Mario Sunshine",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming", "Mario"],
-  transparent: true
-},
-{
-  image: "images/switch.png",
-  title: "Switch",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Gaming"],
-  transparent: true
-},
-{
-  image: "images/temporarily-sold-out.png",
-  title: "Temporarily Sold Out",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/the-boiled-one.png",
-  title: "The Boiled One",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror"],
-  transparent: true
-},
-{
-  image: "images/the-fallen-angel.png",
-  title: "The Fallen Angel",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Fantasy", "Horror"],
-  transparent: true
-},
-{
-  image: "images/the-office.png",
-  title: "The Office",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["TV"],
-  transparent: true
-},
-{
-  image: "images/under-construction-tape.png",
-  title: "Under Construction Tape",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Utility"],
-  transparent: true
-},
-{
-  image: "images/yellow-ornament.png",
-  title: "Yellow Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-  // ==========================
-  // ===== Other Characters ===
-  // ==========================
-  {
-    image:       "images/aerith.png",
-    title:       "Aerith",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/ashe.png",
-    title:       "Ashe",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/buggy.png",
-    title:       "Buggy",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["One Piece", "Anime", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/chibi-ffvii.png",
-    title:       "Chibi FFVII",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters", "Chibi"],
-    transparent: true
-  },
-  {
-    image:       "images/cloud-and-tifa.png",
-    title:       "Cloud & Tifa",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/costa-del-tifa.png",
-    title:       "Costa Del Tifa",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Aesthetic"],
-    transparent: false
-  },
-  {
-    image:       "images/her-perspective.png",
-    title:       "Her Perspective",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Aesthetic", "Scenery"],
-    transparent: false
-  },
-  {
-    image:       "images/his-perspective.png",
-    title:       "His Perspective",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Aesthetic", "Scenery"],
-    transparent: false
-  },
-  {
-    image:       "images/lightning.png",
-    title:       "Lightning",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/nami.png",
-    title:       "Nami",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["One Piece", "Anime", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/save-game.png",
-    title:       "Save Game?",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Gaming", "Aesthetic"],
-    transparent: true
-  },
-  {
-    image:       "images/tidus-and-yuna.png",
-    title:       "Tidus & Yuna",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/zerotwo.png",
-    title:       "ZeroTwo",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Anime", "Characters"],
-    transparent: false
-  },
-  
-// ==========================
-// ===== Missing Maps =======
-// ==========================
+// ===== Eden =====
+const edenPack = [
+  ["edens-cat", ["Animals","Aesthetic"], false, "1x2"],
+  ["nezuko", ["Demon Slayer","Anime","Characters"], false, "2x3"],
+  ["tanjiro", ["Demon Slayer","Anime","Characters"], false, "2x2"],
+  ["mew", ["Pokemon","Characters"], false, "2x2"],
+  ["zelda", ["Legend of Zelda","Characters"], true, "2x2"],
+  ["the-straw-hat-pirates", ["One Piece","Anime","Characters"], false, "3x4"],
 
-{
-  image: "images/bring-me-the-horizon.png",
-  title: "Bring Me The Horizon",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Music", "Aesthetic"],
-  transparent: true
-},
+  ["aerith", ["Final Fantasy","Characters"], false, "2x3"],
+  ["ashe", ["Final Fantasy","Characters"], false, "2x2"],
+  ["buggy", ["One Piece","Anime","Characters"], false, "2x2"],
+  ["chibi-ffvii", ["Final Fantasy","Characters","Chibi"], true, "1x2"],
+  ["cloud-and-tifa", ["Final Fantasy","Characters"], false, "2x2"],
+  ["costa-del-tifa", ["Final Fantasy","Aesthetic"], false, "2x3"],
+  ["her-perspective", ["Aesthetic","Scenery"], false],
+  ["his-perspective", ["Aesthetic","Scenery"], false],
+  ["lightning", ["Final Fantasy","Characters"], false, "2x3"],
+  ["nami", ["One Piece","Anime","Characters"], false, "2x3"],
+  ["save-game", ["Gaming","Aesthetic"], true],
+  ["tidus-and-yuna", ["Final Fantasy","Characters"], false, "2x3"],
+  ["zerotwo", ["Anime","Characters"], false, "2x3"],
+];
 
-// ===== Black Text =====
-{
-  image: "images/black-all-are-welcome-here.png",
-  title: "All Are Welcome Here",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-commissions-closed.png",
-  title: "Commissions Closed",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-commissions-open.png",
-  title: "Commissions Open",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-drink-some-water.png",
-  title: "Drink Some Water",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/black-mapart-coming-soon.png",
-  title: "Mapart Coming Soon",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/black-mapart-coming-soon-heart.png",
-  title: "Mapart Coming Soon ❤️",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/black-not-taking-orders.png",
-  title: "Not Taking Orders",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-not-taking-requests.png",
-  title: "Not Taking Requests",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-taking-orders.png",
-  title: "Taking Orders",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/black-taking-requests.png",
-  title: "Taking Requests",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
+// ===== Gothic =====
+const gothicPack = [
+  ["cyber-spine", ["Horror","Abstract","Sci-Fi"]],
+  ["running-blood", ["Horror","Abstract"]],
+  ["scp-096", ["Horror","SCP","Characters"], true, "1x2"],
+  ["clown", ["Horror","Characters"], false],
+  ["dead-cowboy", ["Horror","Characters"], false],
+  ["trench", ["Horror","Aesthetic"], false],
+  ["lantern", ["Decor","Objects","Aesthetic"], true, "2x1"],
 
-// ===== White Text =====
-{
-  image: "images/white-all-are-welcome-here.png",
-  title: "All Are Welcome Here (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-commissions-closed.png",
-  title: "Commissions Closed (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-commissions-open.png",
-  title: "Commissions Open (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-drink-some-water.png",
-  title: "Drink Some Water (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/white-mapart-coming-soon.png",
-  title: "Mapart Coming Soon (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/white-mapart-coming-soon-heart.png",
-  title: "Mapart Coming Soon ❤️ (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text"],
-  transparent: true
-},
-{
-  image: "images/white-not-taking-orders.png",
-  title: "Not Taking Orders (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-not-taking-requests.png",
-  title: "Not Taking Requests (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-taking-orders.png",
-  title: "Taking Orders (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/white-taking-requests.png",
-  title: "Taking Requests (White)",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/blue-ornament.png",
-  title: "Blue Ornament",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/bongcheon-dong-ghost.png",
-  title: "Bongcheon Dong Ghost",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Horror"],
-  transparent: true
-},
-{
-  image: "images/christmas-lights.png",
-  title: "Christmas Lights",
-  artist: "BringTheHorizon",
-  warp: "/warp gothic mapart",
-  size: "1x1",
-  dateAdded: "2026-03-24",
-  categories: ["Seasonal", "Decor"],
-  transparent: true
-},
-// ==========================
-// ===== Wats Art Pack ======
-// ==========================
+  ["brick-block", ["Gaming","Mario","Objects"], false],
+  ["question-block", ["Gaming","Mario","Objects"], false],
+  ["question-block-2", ["Gaming","Mario","Objects"], false],
+  ["pipe", ["Gaming","Mario","Objects"], false],
+  ["pipe-2", ["Gaming","Mario","Objects"], false],
 
-{
-  image: "images/blaze.png",
-  title: "Blaze",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/bunny.png",
-  title: "Bunny",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Cute"],
-  transparent: true
-},
-{
-  image: "images/cave-spider.png",
-  title: "Cave Spider",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/cow.png",
-  title: "Cow",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/creeper.png",
-  title: "Creeper",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/donkey.png",
-  title: "Donkey",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/drowned.png",
-  title: "Drowned",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/for-you.png",
-  title: "For You",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Cute", "Aesthetic"],
-  transparent: true
-},
-{
-  image: "images/frog-v1.png",
-  title: "Frog V1",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/frog-v2.png",
-  title: "Frog V2",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/frog-v3.png",
-  title: "Frog V3",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/ghost-v1.png",
-  title: "Ghost V1",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Cute", "Ghost"],
-  transparent: true
-},
-{
-  image: "images/ghost-v2.png",
-  title: "Ghost V2",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Cute", "Ghost"],
-  transparent: true
-},
-{
-  image: "images/hoglin.png",
-  title: "Hoglin",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/horse.png",
-  title: "Horse",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/lemergency.png",
-  title: "Lemergency",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Meme"],
-  transparent: true
-},
-{
-  image: "images/magmacube.png",
-  title: "Magma Cube",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/monsieur-slime.png",
-  title: "Monsieur Slime",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Meme"],
-  transparent: true
-},
-{
-  image: "images/mushkin.png",
-  title: "Mushkin",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Cute"],
-  transparent: true
-},
-{
-  image: "images/mushlon.png",
-  title: "Mushlon",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Food", "Cute"],
-  transparent: true
-},
-{
-  image: "images/mushroom-cow.png",
-  title: "Mushroom Cow",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Animals"],
-  transparent: true
-},
-{
-  image: "images/piglin.png",
-  title: "Piglin",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/sheep.png",
-  title: "Sheep",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Animals", "Minecraft"],
-  transparent: true
-},
-{
-  image: "images/skeleton.png",
-  title: "Skeleton",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/slaughter-to-prevail.png",
-  title: "Slaughter To Prevail",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Music"],
-  transparent: true
-},
-{
-  image: "images/slime.png",
-  title: "Slime",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/spider.png",
-  title: "Spider",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/strider.png",
-  title: "Strider",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/walnut-chocolate-chip-cookie.png",
-  title: "Walnut Chocolate Chip Cookie",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Food"],
-  transparent: true
-},
-{
-  image: "images/warp-lemon-shop.png",
-  title: "Warp Lemon Shop",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Text", "Utility"],
-  transparent: true
-},
-{
-  image: "images/witch.png",
-  title: "Witch",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/zombie.png",
-  title: "Zombie",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
-{
-  image: "images/zombpig.png",
-  title: "Zombpig",
-  artist: "watstom1811",
-  warp: "/warp wats art",
-  size: "1x1",
-  dateAdded: "2026-04-03",
-  categories: ["Minecraft", "Mobs"],
-  transparent: true
-},
+  ["empty-block", ["Objects","Utility"], false],
+  ["empty-block-2", ["Objects","Utility"], false],
+
+  ["disco-ball", ["Aesthetic","Objects"], false],
+
+  ["angel", ["Fantasy","Aesthetic"]],
+  ["back-in-stock", ["Text","Utility"]],
+  ["beheaded-statue", ["Horror","Statue"]],
+  ["better-call-saul", ["TV","Meme"]],
+  ["blood-splatter", ["Horror","Abstract"]],
+  ["breaking-bad", ["TV"]],
+  ["bubbles", ["Aesthetic"]],
+  ["candycane", ["Seasonal","Aesthetic"]],
+  ["clearance-sell", ["Text","Utility"]],
+  ["coming-soon", ["Text"]],
+
+  ["colorful-christmas-lights", ["Seasonal","Decor"]],
+  ["crazy", ["Text","Meme"]],
+  ["curved-vine", ["Nature","Decor"]],
+  ["cutting-board", ["Objects"]],
+  ["emoji-1", ["Emoji","Aesthetic"]],
+  ["employees-only", ["Text","Utility"]],
+  ["furnace-fire", ["Aesthetic"]],
+  ["garland", ["Seasonal","Decor"]],
+  ["green-leaf-litter", ["Nature"]],
+  ["green-leaf-litter-2", ["Nature"]],
+  ["green-leaf-litter-3", ["Nature"]],
+  ["green-leaf-litter-4", ["Nature"]],
+  ["green-ornament", ["Seasonal","Aesthetic"]],
+
+  ["half-life", ["Gaming"]],
+  ["happy-new-year", ["Seasonal","Text"]],
+  ["how-do-i-turn-this-thing-off", ["Meme","Text"]],
+  ["inspirational-quote", ["Text"]],
+  ["i-was-crazy-once", ["Meme"]],
+
+  ["mario-coin", ["Gaming","Mario","Objects"]],
+  ["mario-flower", ["Gaming","Mario","Objects"]],
+  ["mario-mushroom", ["Gaming","Mario","Objects"]],
+
+  ["merry-christmas", ["Seasonal","Text"]],
+  ["moon", ["Aesthetic"]],
+  ["moss", ["Nature"]],
+  ["mouse", ["Animals"]],
+  ["mouse-hole", ["Objects","Aesthetic"]],
+  ["new", ["Text"]],
+
+  ["pink-ornament", ["Seasonal","Aesthetic"]],
+  ["primogem", ["Gaming"]],
+  ["purple-ornament", ["Seasonal","Aesthetic"]],
+  ["rainbow-ornament", ["Seasonal","Aesthetic"]],
+  ["red-ornament", ["Seasonal","Aesthetic"]],
+  ["retro-floor", ["Aesthetic","Decor"]],
+  ["sale", ["Text","Utility"]],
+  ["see-no-evil", ["Aesthetic"]],
+  ["silver-ornament", ["Seasonal","Aesthetic"]],
+  ["snowfall", ["Seasonal","Aesthetic"]],
+  ["snowflake", ["Seasonal","Aesthetic"]],
+
+  ["spider", ["Horror","Animals"]],
+  ["spider-string", ["Horror","Decor"]],
+  ["stardew-valley", ["Gaming"]],
+  ["straight-vine", ["Nature","Decor"]],
+  ["strawberry", ["Food","Aesthetic"]],
+  ["strawberry-bundle", ["Food","Aesthetic"]],
+  ["strawberry-bundle-2", ["Food","Aesthetic"]],
+
+  ["super-mario-sunshine", ["Gaming","Mario"]],
+  ["switch", ["Gaming"]],
+  ["temporarily-sold-out", ["Text","Utility"]],
+  ["the-boiled-one", ["Horror"]],
+  ["the-fallen-angel", ["Fantasy","Horror"]],
+  ["the-office", ["TV"]],
+  ["under-construction-tape", ["Utility"]],
+  ["yellow-ornament", ["Seasonal","Aesthetic"]],
+
+  ["bring-me-the-horizon", ["Music","Aesthetic"]],
+
+  ["black-all-are-welcome-here", ["Text","Utility"]],
+  ["black-commissions-closed", ["Text","Utility"]],
+  ["black-commissions-open", ["Text","Utility"]],
+  ["black-drink-some-water", ["Text"]],
+  ["black-mapart-coming-soon", ["Text"]],
+  ["black-mapart-coming-soon-heart", ["Text"]],
+  ["black-not-taking-orders", ["Text","Utility"]],
+  ["black-not-taking-requests", ["Text","Utility"]],
+  ["black-taking-orders", ["Text","Utility"]],
+  ["black-taking-requests", ["Text","Utility"]],
+
+  ["white-all-are-welcome-here", ["Text","Utility"]],
+  ["white-commissions-closed", ["Text","Utility"]],
+  ["white-commissions-open", ["Text","Utility"]],
+  ["white-drink-some-water", ["Text"]],
+  ["white-mapart-coming-soon", ["Text"]],
+  ["white-mapart-coming-soon-heart", ["Text"]],
+  ["white-not-taking-orders", ["Text","Utility"]],
+  ["white-not-taking-requests", ["Text","Utility"]],
+  ["white-taking-orders", ["Text","Utility"]],
+  ["white-taking-requests", ["Text","Utility"]],
+
+  ["blue-ornament", ["Seasonal","Aesthetic"]],
+  ["bongcheon-dong-ghost", ["Horror"]],
+  ["christmas-lights", ["Seasonal","Decor"]],
+];
+
+// ===== Wats =====
+const watsPack = [
+  ["blaze", ["Minecraft","Mobs"]],
+  ["bunny", ["Animals","Cute"]],
+  ["cave-spider", ["Minecraft","Mobs"]],
+  ["cow", ["Animals","Minecraft"]],
+  ["creeper", ["Minecraft","Mobs"]],
+  ["donkey", ["Animals","Minecraft"]],
+  ["drowned", ["Minecraft","Mobs"]],
+  ["for-you", ["Cute","Aesthetic"]],
+  ["frog-v1", ["Animals","Minecraft"]],
+  ["frog-v2", ["Animals","Minecraft"]],
+  ["frog-v3", ["Animals","Minecraft"]],
+  ["ghost-v1", ["Cute","Ghost"]],
+  ["ghost-v2", ["Cute","Ghost"]],
+  ["hoglin", ["Minecraft","Mobs"]],
+  ["horse", ["Animals","Minecraft"]],
+  ["lemergency", ["Meme"]],
+  ["magmacube", ["Minecraft","Mobs"]],
+  ["monsieur-slime", ["Minecraft","Meme"]],
+  ["mushkin", ["Cute"]],
+  ["mushlon", ["Food","Cute"]],
+  ["mushroom-cow", ["Minecraft","Animals"]],
+  ["piglin", ["Minecraft","Mobs"]],
+  ["sheep", ["Animals","Minecraft"]],
+  ["skeleton", ["Minecraft","Mobs"]],
+  ["slaughter-to-prevail", ["Music"]],
+  ["slime", ["Minecraft","Mobs"]],
+  ["spider", ["Minecraft","Mobs"]],
+  ["strider", ["Minecraft","Mobs"]],
+  ["walnut-chocolate-chip-cookie", ["Food"]],
+  ["warp-lemon-shop", ["Text","Utility"]],
+  ["witch", ["Minecraft","Mobs"]],
+  ["zombie", ["Minecraft","Mobs"]],
+  ["zombpig", ["Minecraft","Mobs"]],
 ];
 
 // ==========================
-// DOM elements
-const gallery = document.getElementById("gallery");
-const searchInput = document.getElementById("search");
-const sizeFilter = document.getElementById("sizeFilter");
-const artistFilter = document.getElementById("artistFilter");
-const warpFilter = document.getElementById("warpFilter");
-const sortSelect = document.getElementById("sort");
-const bgFilter = document.getElementById("bgFilter");
-const resetBtn = document.getElementById("reset");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const mapartCount = document.getElementById("mapartCount");
-const categoryFilters = document.getElementById("categoryFilters");
+// BUILD
 
+const maparts = [
 
-// ==========================
-// NEW badge
-function markNewMaparts() {
-  const today = new Date();
-  maparts.forEach(a => {
-    if (a.dateAdded) {
-      const added = new Date(a.dateAdded);
-      const diffDays = (today - added) / (1000 * 60 * 60 * 24);
-      a.newest = diffDays <= 7;
-    } else {
-      a.newest = false;
-    }
-  });
-}
+  ...sarahPack.map(([name, categories, transparent]) =>
+    createMapart({
+      name,
+      artist: "SarahAzureHeart",
+      warp: "/warp artgallery",
+      size: "1x1",
+      date: "2025-12-29",
+      categories,
+      transparent
+    })
+  ),
 
+  ...edenPack.map(([name, categories, transparent, size = "1x1"]) =>
+    createMapart({
+      name,
+      artist: "Bipolarbearx56",
+      warp: "/warp mapart by eden",
+      size,
+      date: "2025-12-29",
+      categories,
+      transparent
+    })
+  ),
 
-// ==========================
-// Populate filters
-function populateFilters() {
-  const artists = [...new Set(maparts.map(a => a.artist))];
-  const warps = [...new Set(maparts.map(a => a.warp))];
+  ...gothicPack.map(([name, categories, transparent = true, size = "1x1"]) =>
+    createMapart({
+      name,
+      artist: "BringTheHorizon",
+      warp: "/warp gothic mapart",
+      size,
+      date: "2026-03-24",
+      categories,
+      transparent
+    })
+  ),
 
-  artists.forEach(a => {
-    const option = document.createElement("option");
-    option.value = a;
-    option.textContent = a;
-    artistFilter.appendChild(option);
-  });
+  ...watsPack.map(([name, categories]) =>
+    createMapart({
+      name,
+      artist: "watstom1811",
+      warp: "/warp wats art",
+      size: "1x1",
+      date: "2026-04-03",
+      categories,
+      transparent: true
+    })
+  )
 
-  warps.forEach(w => {
-    const option = document.createElement("option");
-    option.value = w;
-    option.textContent = w;
-    warpFilter.appendChild(option);
-  });
-
-  // ===== CATEGORY CHIPS =====
-  const categories = [...new Set(maparts.flatMap(a => a.categories || []))].sort();
-
-  categories.forEach(c => {
-    const chip = document.createElement("div");
-    chip.className = "chip";
-    chip.textContent = c;
-
-    chip.addEventListener("click", () => {
-      chip.classList.toggle("active");
-      filterGallery();
-    });
-
-    categoryFilters.appendChild(chip);
-  });
-}
-
-
-// ==========================
-// Render gallery
-function renderGallery(list) {
-  gallery.innerHTML = "";
-
-  if (list.length === 0) {
-    gallery.innerHTML = "<p>No mapart found.</p>";
-  } else {
-    list.forEach(art => {
-      const card = document.createElement("div");
-      card.className = "card";
-
-      card.innerHTML = `
-        <img src="${art.image}" alt="${art.title}" loading="lazy">
-        <div class="card-content">
-          <h3>${art.title}</h3>
-          <p><strong>Artist:</strong> ${art.artist}</p>
-          <p><strong>Warp:</strong> <code>${art.warp}</code></p>
-          <p><strong>Size:</strong> ${art.size}</p>
-          <p><strong>Category:</strong> ${(art.categories || []).join(", ")}</p>
-          <button class="copyWarpBtn">Copy Warp</button>
-        </div>
-      `;
-
-      card.querySelector("img").addEventListener("click", () => {
-        lightboxImg.src = art.image;
-        lightbox.classList.add("show");
-      });
-
-      card.querySelector(".copyWarpBtn").addEventListener("click", () => {
-        navigator.clipboard.writeText(art.warp);
-      });
-
-      if (art.newest) {
-        const badge = document.createElement("div");
-        badge.className = "badge";
-        badge.textContent = "New!";
-        card.appendChild(badge);
-      }
-
-      gallery.appendChild(card);
-    });
-  }
-
-  mapartCount.textContent = `Showing ${list.length} of ${maparts.length} maparts`;
-}
-
-
-// ==========================
-// Filter logic
-function filterGallery() {
-  const s = searchInput.value.toLowerCase();
-  const size = sizeFilter.value;
-  const artist = artistFilter.value;
-  const warp = warpFilter.value;
-  const sort = sortSelect.value;
-  const bgValue = bgFilter.value;
-
-  // ✅ CHIP SYSTEM
-  const selectedCategories = [...categoryFilters.querySelectorAll(".chip.active")]
-    .map(chip => chip.textContent);
-
-  let filtered = maparts.filter(a =>
-    (a.title.toLowerCase().includes(s) ||
-     a.artist.toLowerCase().includes(s) ||
-     a.warp.toLowerCase().includes(s)) &&
-    (size === "" || a.size === size) &&
-    (artist === "" || a.artist === artist) &&
-    (warp === "" || a.warp === warp) &&
-    (
-      selectedCategories.length === 0 ||
-      selectedCategories.some(cat => (a.categories || []).includes(cat))
-    ) &&
-    (
-      bgValue === "" ||
-      (bgValue === "transparent" && a.transparent) ||
-      (bgValue === "solid" && !a.transparent)
-    )
-  );
-
-  if (sort === "az") filtered.sort((a,b) => a.title.localeCompare(b.title));
-  if (sort === "size") filtered.sort((a,b) => a.size.localeCompare(b.size));
-  if (sort === "newest") filtered.reverse();
-
-  renderGallery(filtered);
-}
-
-
-// ==========================
-// Events
-searchInput.addEventListener("input", filterGallery);
-sizeFilter.addEventListener("change", filterGallery);
-artistFilter.addEventListener("change", filterGallery);
-warpFilter.addEventListener("change", filterGallery);
-sortSelect.addEventListener("change", filterGallery);
-bgFilter.addEventListener("change", filterGallery);
-
-
-// ==========================
-// Reset
-resetBtn.addEventListener("click", () => {
-  document.querySelectorAll(".chip").forEach(chip => chip.classList.remove("active"));
-
-  searchInput.value = "";
-  sizeFilter.value = "";
-  artistFilter.value = "";
-  warpFilter.value = "";
-  sortSelect.value = "";
-  bgFilter.value = "";
-
-  renderGallery(maparts);
-});
-
-
-// ==========================
-// Init
-markNewMaparts();
-populateFilters();
-renderGallery(maparts);
-
-
-// ==========================
-// Lightbox close
-lightbox.addEventListener("click", () => lightbox.classList.remove("show"));
-🚨 IMPORTANT
+];
