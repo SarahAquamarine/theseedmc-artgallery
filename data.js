@@ -1685,6 +1685,26 @@ const maparts = [
   categories: ["Animals", "Cute", "Fantasy"],
   transparent: false
 },
+{
+  image: "images/bottle-cat.png",
+  title: "Bottle Cat",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "3x3",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/strawberry.png",
+  title: "Strawberry",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "3x3",
+  dateAdded: "2026-04-03",
+  categories: ["Food", "Aesthetic"],
+  transparent: true
+},
 ];
 
 // ==========================
