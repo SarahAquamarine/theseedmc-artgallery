@@ -1301,6 +1301,340 @@ const maparts = [
   categories: ["Seasonal", "Decor"],
   transparent: true
 },
+// ==========================
+// ===== Wats Art Pack ======
+// ==========================
+
+{
+  image: "images/blaze.png",
+  title: "Blaze",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/bunny.png",
+  title: "Bunny",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Cute"],
+  transparent: true
+},
+{
+  image: "images/cave-spider.png",
+  title: "Cave Spider",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/cow.png",
+  title: "Cow",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/creeper.png",
+  title: "Creeper",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/donkey.png",
+  title: "Donkey",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/drowned.png",
+  title: "Drowned",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/for-you.png",
+  title: "For You",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Cute", "Aesthetic"],
+  transparent: true
+},
+{
+  image: "images/frog-v1.png",
+  title: "Frog V1",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/frog-v2.png",
+  title: "Frog V2",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/frog-v3.png",
+  title: "Frog V3",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/ghost-v1.png",
+  title: "Ghost V1",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Cute", "Ghost"],
+  transparent: true
+},
+{
+  image: "images/ghost-v2.png",
+  title: "Ghost V2",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Cute", "Ghost"],
+  transparent: true
+},
+{
+  image: "images/hoglin.png",
+  title: "Hoglin",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/horse.png",
+  title: "Horse",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/lemergency.png",
+  title: "Lemergency",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Meme"],
+  transparent: true
+},
+{
+  image: "images/magmacube.png",
+  title: "Magma Cube",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/monsieur-slime.png",
+  title: "Monsieur Slime",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Meme"],
+  transparent: true
+},
+{
+  image: "images/mushkin.png",
+  title: "Mushkin",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Cute"],
+  transparent: true
+},
+{
+  image: "images/mushlon.png",
+  title: "Mushlon",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Food", "Cute"],
+  transparent: true
+},
+{
+  image: "images/mushroom-cow.png",
+  title: "Mushroom Cow",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Animals"],
+  transparent: true
+},
+{
+  image: "images/piglin.png",
+  title: "Piglin",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/sheep.png",
+  title: "Sheep",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Animals", "Minecraft"],
+  transparent: true
+},
+{
+  image: "images/skeleton.png",
+  title: "Skeleton",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/slaughter-to-prevail.png",
+  title: "Slaughter To Prevail",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Music"],
+  transparent: true
+},
+{
+  image: "images/slime.png",
+  title: "Slime",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/spider.png",
+  title: "Spider",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/strider.png",
+  title: "Strider",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/walnut-chocolate-chip-cookie.png",
+  title: "Walnut Chocolate Chip Cookie",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Food"],
+  transparent: true
+},
+{
+  image: "images/warp-lemon-shop.png",
+  title: "Warp Lemon Shop",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Text", "Utility"],
+  transparent: true
+},
+{
+  image: "images/witch.png",
+  title: "Witch",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/zombie.png",
+  title: "Zombie",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
+{
+  image: "images/zombpig.png",
+  title: "Zombpig",
+  artist: "watstom1811",
+  warp: "/warp wats art",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Minecraft", "Mobs"],
+  transparent: true
+},
 ];
 
 // ==========================
