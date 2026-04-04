@@ -1730,6 +1730,7 @@ function markNewMaparts() {
     const diff = (today - new Date(a.dateAdded)) / (1000 * 60 * 60 * 24);
     a.newest = diff <= 7;
   });
+}
   
 // ===== FILTER SETUP =====
 function populateFilters() {
