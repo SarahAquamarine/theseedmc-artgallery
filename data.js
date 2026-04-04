@@ -25,6 +25,129 @@ const maparts = [
   },
 
   // ==========================
+  // ===== Pokemon ===============
+  // ==========================
+  {
+  image: "images/bulbasaur.png",
+  title: "Bulbasaur",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/charmander.png",
+  title: "Charmander",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/eevee.png",
+  title: "Eevee",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/espeon.png",
+  title: "Espeon",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/gengar.png",
+  title: "Gengar",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/jigglypuff.png",
+  title: "Jigglypuff",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/kirby.png",
+  title: "Kirby",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Gaming", "Characters"],
+  transparent: true
+},
+{
+  image: "images/politoed.png",
+  title: "Politoed",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/rayquaza.png",
+  title: "Rayquaza",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/umbreon.png",
+  title: "Umbreon",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/vaporeon.png",
+  title: "Vaporeon",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+{
+  image: "images/weedle.png",
+  title: "Weedle",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  transparent: true
+},
+  // ==========================
   // ===== Animals ============
   // ==========================
   {
