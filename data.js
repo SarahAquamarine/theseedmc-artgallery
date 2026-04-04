@@ -1721,6 +1721,7 @@ const categoryFilters = document.getElementById("categoryFilters");
 const mapartCount = document.getElementById("mapartCount");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const status = art.status || "active";
 
 // ===== NEW BADGE =====
 function markNewMaparts() {
@@ -1731,7 +1732,13 @@ function markNewMaparts() {
     a.newest = diff <= 7;
   });
 }
-
+if (status === "expired") {
+  const badge = document.createElement("div");
+  badge.className = "badge";
+  badge.textContent = "Expired";
+  badge.style.background = "#ff4d4d";
+  card.appendChild(badge);
+}
 // ===== FILTER SETUP =====
 function populateFilters() {
   const artists = [...new Set(maparts.map(a => a.artist))];
@@ -1779,22 +1786,39 @@ function renderGallery(list) {
     const card = document.createElement("div");
     card.className = "card";
 
+    const status = art.status || "active";
+
     card.innerHTML = `
       <img src="${art.image}">
       <div class="card-content">
         <h3>${art.title}</h3>
         <p><strong>Artist:</strong> ${art.artist}</p>
-        <p><strong>Warp:</strong> <code>${art.warp}</code></p>
+        <p>
+          <strong>Warp:</strong> 
+          <code>${art.warp}</code>
+          ${status === "expired" ? "<span style='color:red;'> (expired)</span>" : ""}
+        </p>
         <p><strong>Size:</strong> ${art.size}</p>
         <p><strong>Category:</strong> ${(art.categories || []).join(", ")}</p>
       </div>
     `;
 
+    // Lightbox click
     card.querySelector("img").onclick = () => {
       lightboxImg.src = art.image;
       lightbox.classList.add("show");
     };
 
+    // 🔴 Expired badge
+    if (status === "expired") {
+      const badge = document.createElement("div");
+      badge.className = "badge";
+      badge.textContent = "Expired";
+      badge.style.background = "#ff4d4d";
+      card.appendChild(badge);
+    }
+
+    // 🟠 New badge (keep your existing feature)
     if (art.newest) {
       const badge = document.createElement("div");
       badge.className = "badge";
