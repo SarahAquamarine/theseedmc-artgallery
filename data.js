@@ -42,6 +42,7 @@ const maparts = [
   size: "2x3",
   dateAdded: "2026-04-03",
   categories: ["Anime", "Characters"],
+  status: "expired",
   transparent: true
 },
 {
@@ -52,6 +53,7 @@ const maparts = [
   size: "2x3",
   dateAdded: "2026-04-03",
   categories: ["Anime", "Characters"],
+  status: "expired",
   transparent: true
 },
 {
@@ -62,6 +64,29 @@ const maparts = [
   size: "2x3",
   dateAdded: "2026-04-03",
   categories: ["Sci-Fi", "Characters"],
+  status: "expired",
+  transparent: true
+},
+{
+  image: "images/ghostface.png",
+  title: "Ghostface",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "3x2",
+  dateAdded: "2026-04-03",
+  categories: ["Horror", "Characters"],
+  status: "expired",
+  transparent: true
+},
+{
+  image: "images/max-and-grinch.png",
+  title: "Max & Grinch",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "3x2",
+  dateAdded: "2026-04-03",
+  categories: ["Seasonal", "Characters"],
+  status: "expired",
   transparent: true
 },
   // ==========================
