@@ -1898,6 +1898,9 @@ const maparts = [
   categories: ["Food", "Aesthetic"],
   transparent: true
 },
+// ==========================
+// ===== Artist Name ========
+// ==========================
 ];
 
 // ==========================
