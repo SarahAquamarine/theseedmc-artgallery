@@ -1,28 +1,31 @@
 const maparts = [
 
   // ==========================
-  // ===== Misc ===============
+  // ===== SarahAzureHeart ====
   // ==========================
   {
-    image:       "images/replant-or-banned.png",
-    title:       "Replant or Banned",
-    artist:      "SarahAzureHeart",
-    warp:        "/warp artgallery",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Server", "Utility"],
+    image: "images/replant-or-banned.png",
+    title: "Replant or Banned",
+    artist: "SarahAzureHeart",
+    warp: "/warp artgallery",
+    size: "1x1",
+    dateAdded: "2025-12-29",
+    categories: ["Server", "Utility"],
     transparent: false
   },
   {
-    image:       "images/theseedmc.png",
-    title:       "TheSeedMC",
-    artist:      "SarahAzureHeart",
-    warp:        "/warp artgallery",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Server", "Utility"],
+    image: "images/theseedmc.png",
+    title: "TheSeedMC",
+    artist: "SarahAzureHeart",
+    warp: "/warp artgallery",
+    size: "1x1",
+    dateAdded: "2025-12-29",
+    categories: ["Server", "Utility"],
     transparent: false
   },
+  // ==========================
+  // ===== Lenalovescows ======
+  // ==========================
   {
   image: "images/metaknight.png",
   title: "Meta Knight",
@@ -122,9 +125,6 @@ const maparts = [
   status: "expired",
   transparent: true
 },
-  // ==========================
-  // ===== Pokemon ===============
-  // ==========================
   {
   image: "images/bulbasaur.png",
   title: "Bulbasaur",
@@ -279,7 +279,7 @@ const maparts = [
   transparent: true
 },
   // ==========================
-  // ===== Animals ============
+  // ===== Bipolarbearx56 =====
   // ==========================
   {
     image:       "images/edens-cat.png",
@@ -291,10 +291,6 @@ const maparts = [
     categories:  ["Animals", "Aesthetic"],
     transparent: false
   },
-
-  // ==========================
-  // ===== Demon Slayer =======
-  // ==========================
   {
     image:       "images/nezuko.png",
     title:       "Nezuko",
@@ -315,10 +311,6 @@ const maparts = [
     categories:  ["Demon Slayer", "Anime", "Characters"],
     transparent: false
   },
-
-  // ==========================
-  // ===== Pokemon ============
-  // ==========================
   {
     image:       "images/mew.png",
     title:       "Mew",
@@ -329,10 +321,6 @@ const maparts = [
     categories:  ["Pokemon", "Characters"],
     transparent: false
   },
-
-  // ==========================
-  // ===== Legend of Zelda ====
-  // ==========================
   {
     image:       "images/zelda.png",
     title:       "Zelda",
@@ -343,10 +331,6 @@ const maparts = [
     categories:  ["Legend of Zelda", "Characters"],
     transparent: true
   },
-
-  // ==========================
-  // ===== One Piece ==========
-  // ==========================
   {
     image:       "images/the-straw-hat-pirates.png",
     title:       "The Straw Hat Pirates",
@@ -357,10 +341,139 @@ const maparts = [
     categories:  ["One Piece", "Anime", "Characters"],
     transparent: false
   },
-  
-// ==========================
-// ===== Horror =============
-// ==========================
+  {
+    image:       "images/aerith.png",
+    title:       "Aerith",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/ashe.png",
+    title:       "Ashe",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x2",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/buggy.png",
+    title:       "Buggy",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x2",
+    dateAdded:   "2025-12-29",
+    categories:  ["One Piece", "Anime", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/chibi-ffvii.png",
+    title:       "Chibi FFVII",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "1x2",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters", "Chibi"],
+    transparent: true
+  },
+  {
+    image:       "images/cloud-and-tifa.png",
+    title:       "Cloud & Tifa",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x2",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/costa-del-tifa.png",
+    title:       "Costa Del Tifa",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Aesthetic"],
+    transparent: false
+  },
+  {
+    image:       "images/her-perspective.png",
+    title:       "Her Perspective",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "1x1",
+    dateAdded:   "2025-12-29",
+    categories:  ["Aesthetic", "Scenery"],
+    transparent: false
+  },
+  {
+    image:       "images/his-perspective.png",
+    title:       "His Perspective",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "1x1",
+    dateAdded:   "2025-12-29",
+    categories:  ["Aesthetic", "Scenery"],
+    transparent: false
+  },
+  {
+    image:       "images/lightning.png",
+    title:       "Lightning",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/nami.png",
+    title:       "Nami",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["One Piece", "Anime", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/save-game.png",
+    title:       "Save Game?",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "1x1",
+    dateAdded:   "2025-12-29",
+    categories:  ["Gaming", "Aesthetic"],
+    transparent: true
+  },
+  {
+    image:       "images/tidus-and-yuna.png",
+    title:       "Tidus & Yuna",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["Final Fantasy", "Characters"],
+    transparent: false
+  },
+  {
+    image:       "images/zerotwo.png",
+    title:       "ZeroTwo",
+    artist:      "Bipolarbearx56",
+    warp:        "/warp mapart by eden",
+    size:        "2x3",
+    dateAdded:   "2025-12-29",
+    categories:  ["Anime", "Characters"],
+    transparent: false
+  },
+  // ==========================
+  // ===== BringTheHorizon ====
+  // ==========================
 {
   image:       "images/cyber-spine.png",
   title:       "Cyber Spine",
@@ -421,10 +534,6 @@ const maparts = [
   categories:  ["Horror", "Aesthetic"],
   transparent: false
 },
-  
-// ==========================
-// ===== Decor ==============
-// ==========================
 {
   image:       "images/lantern.png",
   title:       "Lantern",
@@ -435,10 +544,6 @@ const maparts = [
   categories:  ["Decor", "Objects", "Aesthetic"],
   transparent: true
 },
-
-// ==========================
-// ===== Mario / Gaming =====
-// ==========================
 {
   image:       "images/brick-block.png",
   title:       "Brick Block",
@@ -489,10 +594,6 @@ const maparts = [
   categories:  ["Gaming", "Mario", "Objects"],
   transparent: false
 },
-
-// ==========================
-// ===== Objects / Utility ==
-// ==========================
 {
   image:       "images/empty-block.png",
   title:       "Empty Block",
@@ -513,10 +614,6 @@ const maparts = [
   categories:  ["Objects", "Utility"],
   transparent: false
 },
-
-// ==========================
-// ===== Aesthetic =========
-// ==========================
 {
   image:       "images/disco-ball.png",
   title:       "Disco Ball",
@@ -527,10 +624,6 @@ const maparts = [
   categories:  ["Aesthetic", "Objects"],
   transparent: false
 },
-  
-// ==========================
-// ===== Gothic Pack (Bulk) ==
-// ==========================
 {
   image: "images/angel.png",
   title: "Angel",
@@ -631,9 +724,6 @@ const maparts = [
   categories: ["Text"],
   transparent: true
 },
-  // ==========================
-// ===== Gothic Pack (2) ====
-// ==========================
 {
   image: "images/colorful-christmas-lights.png",
   title: "Colorful Christmas Lights",
@@ -734,9 +824,6 @@ const maparts = [
   categories: ["Nature"],
   transparent: true
 },
-  // ==========================
-// ===== Gothic Pack (3) ====
-// ==========================
 {
   image: "images/green-leaf-litter-3.png",
   title: "Green Leaf Litter 3",
@@ -837,9 +924,6 @@ const maparts = [
   categories: ["Gaming", "Mario", "Objects"],
   transparent: true
 },
-  // ==========================
-// ===== Gothic Pack (4) ====
-// ==========================
 {
   image: "images/mario-mushroom.png",
   title: "Mario Mushroom",
@@ -940,9 +1024,6 @@ const maparts = [
   categories: ["Seasonal", "Aesthetic"],
   transparent: true
 },
-  // ==========================
-// ===== Gothic Pack (5) ====
-// ==========================
 {
   image: "images/rainbow-ornament.png",
   title: "Rainbow Ornament",
@@ -1173,144 +1254,6 @@ const maparts = [
   categories: ["Seasonal", "Aesthetic"],
   transparent: true
 },
-  // ==========================
-  // ===== Other Characters ===
-  // ==========================
-  {
-    image:       "images/aerith.png",
-    title:       "Aerith",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/ashe.png",
-    title:       "Ashe",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/buggy.png",
-    title:       "Buggy",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["One Piece", "Anime", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/chibi-ffvii.png",
-    title:       "Chibi FFVII",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters", "Chibi"],
-    transparent: true
-  },
-  {
-    image:       "images/cloud-and-tifa.png",
-    title:       "Cloud & Tifa",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x2",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/costa-del-tifa.png",
-    title:       "Costa Del Tifa",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Aesthetic"],
-    transparent: false
-  },
-  {
-    image:       "images/her-perspective.png",
-    title:       "Her Perspective",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Aesthetic", "Scenery"],
-    transparent: false
-  },
-  {
-    image:       "images/his-perspective.png",
-    title:       "His Perspective",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Aesthetic", "Scenery"],
-    transparent: false
-  },
-  {
-    image:       "images/lightning.png",
-    title:       "Lightning",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/nami.png",
-    title:       "Nami",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["One Piece", "Anime", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/save-game.png",
-    title:       "Save Game?",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "1x1",
-    dateAdded:   "2025-12-29",
-    categories:  ["Gaming", "Aesthetic"],
-    transparent: true
-  },
-  {
-    image:       "images/tidus-and-yuna.png",
-    title:       "Tidus & Yuna",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Final Fantasy", "Characters"],
-    transparent: false
-  },
-  {
-    image:       "images/zerotwo.png",
-    title:       "ZeroTwo",
-    artist:      "Bipolarbearx56",
-    warp:        "/warp mapart by eden",
-    size:        "2x3",
-    dateAdded:   "2025-12-29",
-    categories:  ["Anime", "Characters"],
-    transparent: false
-  },
-  
-// ==========================
-// ===== Missing Maps =======
-// ==========================
-
 {
   image: "images/bring-me-the-horizon.png",
   title: "Bring Me The Horizon",
@@ -1321,8 +1264,6 @@ const maparts = [
   categories: ["Music", "Aesthetic"],
   transparent: true
 },
-
-// ===== Black Text =====
 {
   image: "images/black-all-are-welcome-here.png",
   title: "All Are Welcome Here",
@@ -1423,8 +1364,6 @@ const maparts = [
   categories: ["Text", "Utility"],
   transparent: true
 },
-
-// ===== White Text =====
 {
   image: "images/white-all-are-welcome-here.png",
   title: "All Are Welcome Here (White)",
@@ -1556,7 +1495,7 @@ const maparts = [
   transparent: true
 },
 // ==========================
-// ===== Wats Art Pack ======
+// ===== watstom1811 ======
 // ==========================
 
 {
