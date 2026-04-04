@@ -89,6 +89,17 @@ const maparts = [
   status: "expired",
   transparent: true
 },
+{
+  image: "images/mother-of-dragons.png",
+  title: "Mother of Dragons",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "3x5",
+  dateAdded: "2026-04-03",
+  categories: ["Fantasy", "Characters"],
+  status: "expired",
+  transparent: true
+},
   // ==========================
   // ===== Pokemon ===============
   // ==========================
