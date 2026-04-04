@@ -23,6 +23,16 @@ const maparts = [
     categories:  ["Server", "Utility"],
     transparent: false
   },
+  {
+  image: "images/metaknight.png",
+  title: "Meta Knight",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "1x1",
+  dateAdded: "2026-04-03",
+  categories: ["Gaming", "Characters"],
+  transparent: true
+  },
 
   // ==========================
   // ===== Pokemon ===============
