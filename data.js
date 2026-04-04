@@ -148,6 +148,17 @@ const maparts = [
   transparent: true
 },
 {
+  image: "images/giratina.png",
+  title: "Giratina",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "3x4",
+  dateAdded: "2026-04-03",
+  categories: ["Pokemon", "Characters"],
+  status: "expired",
+  transparent: true
+},
+{
   image: "images/jigglypuff.png",
   title: "Jigglypuff",
   artist: "Lenalovescows & unknownPLAY3R",
