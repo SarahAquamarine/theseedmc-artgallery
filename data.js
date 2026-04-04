@@ -1783,6 +1783,7 @@ function renderGallery(list) {
   }
 
   list.forEach(art => {
+
     const card = document.createElement("div");
     card.className = "card";
 
@@ -1803,13 +1804,13 @@ function renderGallery(list) {
       </div>
     `;
 
-    // Lightbox click
+    // Lightbox
     card.querySelector("img").onclick = () => {
       lightboxImg.src = art.image;
       lightbox.classList.add("show");
     };
 
-    // 🔴 Expired badge
+    // Expired badge
     if (status === "expired") {
       const badge = document.createElement("div");
       badge.className = "badge";
@@ -1818,7 +1819,7 @@ function renderGallery(list) {
       card.appendChild(badge);
     }
 
-    // 🟠 New badge (keep your existing feature)
+    // New badge
     if (art.newest) {
       const badge = document.createElement("div");
       badge.className = "badge";
