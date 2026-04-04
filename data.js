@@ -31,6 +31,7 @@ const maparts = [
   size: "1x1",
   dateAdded: "2026-04-03",
   categories: ["Gaming", "Characters"],
+  status: "expired",
   transparent: true
   },
 
