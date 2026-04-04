@@ -34,7 +34,36 @@ const maparts = [
   status: "expired",
   transparent: true
   },
-
+  {
+  image: "images/mikasa.png",
+  title: "Mikasa",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "2x3",
+  dateAdded: "2026-04-03",
+  categories: ["Anime", "Characters"],
+  transparent: true
+},
+{
+  image: "images/power.png",
+  title: "Power",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "2x3",
+  dateAdded: "2026-04-03",
+  categories: ["Anime", "Characters"],
+  transparent: true
+},
+{
+  image: "images/storm-trooper.png",
+  title: "Stormtrooper",
+  artist: "Lenalovescows & unknownPLAY3R",
+  warp: "/warp mapart by lena",
+  size: "2x3",
+  dateAdded: "2026-04-03",
+  categories: ["Sci-Fi", "Characters"],
+  transparent: true
+},
   // ==========================
   // ===== Pokemon ===============
   // ==========================
