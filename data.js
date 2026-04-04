@@ -1721,7 +1721,6 @@ const categoryFilters = document.getElementById("categoryFilters");
 const mapartCount = document.getElementById("mapartCount");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
-const status = art.status || "active";
 
 // ===== NEW BADGE =====
 function markNewMaparts() {
@@ -1731,14 +1730,7 @@ function markNewMaparts() {
     const diff = (today - new Date(a.dateAdded)) / (1000 * 60 * 60 * 24);
     a.newest = diff <= 7;
   });
-}
-if (status === "expired") {
-  const badge = document.createElement("div");
-  badge.className = "badge";
-  badge.textContent = "Expired";
-  badge.style.background = "#ff4d4d";
-  card.appendChild(badge);
-}
+  
 // ===== FILTER SETUP =====
 function populateFilters() {
   const artists = [...new Set(maparts.map(a => a.artist))];
