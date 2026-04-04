@@ -1831,7 +1831,7 @@ const maparts = [
   transparent: true
 },
 {
-  image: "images/strawberry.png",
+  image: "images/strawberry-wats.png",
   title: "Strawberry",
   artist: "watstom1811",
   warp: "/warp wats art",
